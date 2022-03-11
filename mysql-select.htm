@@ -1,0 +1,1945 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=ProgId content=Word.Document>
+    <meta name=Generator content="Microsoft Word 15">
+    <meta name=Originator content="Microsoft Word 15">
+    <link rel=File-List href="mysql-select.files/filelist.xml">
+    <link rel=Edit-Time-Data href="mysql-select.files/editdata.mso">
+    <!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+    <!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Andrii Kopp</o:Author>
+  <o:LastAuthor>Andrii Kopp</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2022-03-11T09:49:00Z</o:Created>
+  <o:LastSaved>2022-03-11T09:50:00Z</o:LastSaved>
+  <o:Pages>13</o:Pages>
+  <o:Words>3870</o:Words>
+  <o:Characters>2207</o:Characters>
+  <o:Lines>18</o:Lines>
+  <o:Paragraphs>12</o:Paragraphs>
+  <o:CharactersWithSpaces>6065</o:CharactersWithSpaces>
+  <o:Version>15.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+    <link rel=themeData href="mysql-select.files/themedata.thmx">
+    <link rel=colorSchemeMapping href="mysql-select.files/colorschememapping.xml">
+    <!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>UK</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]-->
+    <!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="371">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+    <style>
+        <!--
+        /* Font Definitions */
+        
+        @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+            mso-font-charset: 1;
+            mso-generic-font-family: roman;
+            mso-font-format: other;
+            mso-font-pitch: variable;
+            mso-font-signature: 0 0 0 0 0 0;
+        }
+        
+        @font-face {
+            font-family: Calibri;
+            panose-1: 2 15 5 2 2 2 4 3 2 4;
+            mso-font-charset: 204;
+            mso-generic-font-family: swiss;
+            mso-font-pitch: variable;
+            mso-font-signature: -469750017 -1073732485 9 0 511 0;
+        }
+        /* Style Definitions */
+        
+        p.MsoNormal,
+        li.MsoNormal,
+        div.MsoNormal {
+            mso-style-unhide: no;
+            mso-style-qformat: yes;
+            mso-style-parent: "";
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            text-align: justify;
+            text-indent: 14.2pt;
+            line-height: 150%;
+            mso-pagination: widow-orphan;
+            font-size: 14.0pt;
+            mso-bidi-font-size: 11.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-fareast-font-family: Calibri;
+            mso-fareast-theme-font: minor-latin;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: minor-bidi;
+            mso-fareast-language: EN-US;
+        }
+        
+        h1 {
+            mso-style-priority: 9;
+            mso-style-unhide: no;
+            mso-style-qformat: yes;
+            mso-style-link: "��������� 1 ����";
+            mso-style-next: �������;
+            margin-top: 12.0pt;
+            margin-right: 0cm;
+            margin-bottom: 12.0pt;
+            margin-left: 0cm;
+            text-align: center;
+            line-height: 150%;
+            mso-pagination: widow-orphan lines-together;
+            page-break-after: avoid;
+            mso-outline-level: 1;
+            font-size: 16.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-fareast-font-family: "Times New Roman";
+            mso-fareast-theme-font: major-fareast;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: major-bidi;
+            mso-font-kerning: 0pt;
+            mso-fareast-language: EN-US;
+            mso-bidi-font-weight: normal;
+        }
+        
+        h2 {
+            mso-style-priority: 9;
+            mso-style-qformat: yes;
+            mso-style-link: "��������� 2 ����";
+            mso-style-next: �������;
+            margin-top: 6.0pt;
+            margin-right: 0cm;
+            margin-bottom: 6.0pt;
+            margin-left: 0cm;
+            text-align: justify;
+            text-indent: 14.2pt;
+            line-height: 150%;
+            mso-pagination: widow-orphan lines-together;
+            page-break-after: avoid;
+            mso-outline-level: 2;
+            font-size: 14.0pt;
+            mso-bidi-font-size: 13.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-fareast-font-family: "Times New Roman";
+            mso-fareast-theme-font: major-fareast;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: major-bidi;
+            mso-fareast-language: EN-US;
+            mso-bidi-font-weight: normal;
+        }
+        
+        h3 {
+            mso-style-priority: 9;
+            mso-style-qformat: yes;
+            mso-style-link: "��������� 3 ����";
+            mso-style-next: �������;
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            text-align: justify;
+            text-indent: 14.2pt;
+            line-height: 150%;
+            mso-pagination: widow-orphan lines-together;
+            page-break-after: avoid;
+            mso-outline-level: 3;
+            font-size: 14.0pt;
+            mso-bidi-font-size: 12.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-fareast-font-family: "Times New Roman";
+            mso-fareast-theme-font: major-fareast;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: major-bidi;
+            mso-fareast-language: EN-US;
+            font-weight: normal;
+            font-style: italic;
+            mso-bidi-font-style: normal;
+        }
+        
+        p.MsoListParagraph,
+        li.MsoListParagraph,
+        div.MsoListParagraph {
+            mso-style-priority: 34;
+            mso-style-unhide: no;
+            mso-style-qformat: yes;
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 0cm;
+            margin-left: 36.0pt;
+            margin-bottom: .0001pt;
+            mso-add-space: auto;
+            text-align: justify;
+            text-indent: 14.2pt;
+            line-height: 150%;
+            mso-pagination: widow-orphan;
+            font-size: 14.0pt;
+            mso-bidi-font-size: 11.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-fareast-font-family: Calibri;
+            mso-fareast-theme-font: minor-latin;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: minor-bidi;
+            mso-fareast-language: EN-US;
+        }
+        
+        p.MsoListParagraphCxSpFirst,
+        li.MsoListParagraphCxSpFirst,
+        div.MsoListParagraphCxSpFirst {
+            mso-style-priority: 34;
+            mso-style-unhide: no;
+            mso-style-qformat: yes;
+            mso-style-type: export-only;
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 0cm;
+            margin-left: 36.0pt;
+            margin-bottom: .0001pt;
+            mso-add-space: auto;
+            text-align: justify;
+            text-indent: 14.2pt;
+            line-height: 150%;
+            mso-pagination: widow-orphan;
+            font-size: 14.0pt;
+            mso-bidi-font-size: 11.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-fareast-font-family: Calibri;
+            mso-fareast-theme-font: minor-latin;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: minor-bidi;
+            mso-fareast-language: EN-US;
+        }
+        
+        p.MsoListParagraphCxSpMiddle,
+        li.MsoListParagraphCxSpMiddle,
+        div.MsoListParagraphCxSpMiddle {
+            mso-style-priority: 34;
+            mso-style-unhide: no;
+            mso-style-qformat: yes;
+            mso-style-type: export-only;
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 0cm;
+            margin-left: 36.0pt;
+            margin-bottom: .0001pt;
+            mso-add-space: auto;
+            text-align: justify;
+            text-indent: 14.2pt;
+            line-height: 150%;
+            mso-pagination: widow-orphan;
+            font-size: 14.0pt;
+            mso-bidi-font-size: 11.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-fareast-font-family: Calibri;
+            mso-fareast-theme-font: minor-latin;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: minor-bidi;
+            mso-fareast-language: EN-US;
+        }
+        
+        p.MsoListParagraphCxSpLast,
+        li.MsoListParagraphCxSpLast,
+        div.MsoListParagraphCxSpLast {
+            mso-style-priority: 34;
+            mso-style-unhide: no;
+            mso-style-qformat: yes;
+            mso-style-type: export-only;
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 0cm;
+            margin-left: 36.0pt;
+            margin-bottom: .0001pt;
+            mso-add-space: auto;
+            text-align: justify;
+            text-indent: 14.2pt;
+            line-height: 150%;
+            mso-pagination: widow-orphan;
+            font-size: 14.0pt;
+            mso-bidi-font-size: 11.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-fareast-font-family: Calibri;
+            mso-fareast-theme-font: minor-latin;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: minor-bidi;
+            mso-fareast-language: EN-US;
+        }
+        
+        span.1 {
+            mso-style-name: "��������� 1 ����";
+            mso-style-priority: 9;
+            mso-style-unhide: no;
+            mso-style-locked: yes;
+            mso-style-link: "��������� 1";
+            mso-ansi-font-size: 16.0pt;
+            mso-bidi-font-size: 16.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-ascii-font-family: Arial;
+            mso-fareast-font-family: "Times New Roman";
+            mso-fareast-theme-font: major-fareast;
+            mso-hansi-font-family: Arial;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: major-bidi;
+            font-weight: bold;
+            mso-bidi-font-weight: normal;
+        }
+        
+        span.2 {
+            mso-style-name: "��������� 2 ����";
+            mso-style-priority: 9;
+            mso-style-unhide: no;
+            mso-style-locked: yes;
+            mso-style-link: "��������� 2";
+            mso-ansi-font-size: 14.0pt;
+            mso-bidi-font-size: 13.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-ascii-font-family: Arial;
+            mso-fareast-font-family: "Times New Roman";
+            mso-fareast-theme-font: major-fareast;
+            mso-hansi-font-family: Arial;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: major-bidi;
+            font-weight: bold;
+            mso-bidi-font-weight: normal;
+        }
+        
+        span.3 {
+            mso-style-name: "��������� 3 ����";
+            mso-style-priority: 9;
+            mso-style-unhide: no;
+            mso-style-locked: yes;
+            mso-style-link: "��������� 3";
+            mso-ansi-font-size: 14.0pt;
+            mso-bidi-font-size: 12.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-ascii-font-family: Arial;
+            mso-fareast-font-family: "Times New Roman";
+            mso-fareast-theme-font: major-fareast;
+            mso-hansi-font-family: Arial;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: major-bidi;
+            font-style: italic;
+            mso-bidi-font-style: normal;
+        }
+        
+        p.a,
+        li.a,
+        div.a {
+            mso-style-name: �����_������������;
+            mso-style-unhide: no;
+            mso-style-qformat: yes;
+            margin-top: 6.0pt;
+            margin-right: 0cm;
+            margin-bottom: 6.0pt;
+            margin-left: 0cm;
+            text-align: center;
+            line-height: 150%;
+            mso-pagination: none;
+            mso-hyphenate: none;
+            font-size: 14.0pt;
+            mso-bidi-font-size: 10.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-fareast-font-family: "Times New Roman";
+            mso-bidi-font-family: "Times New Roman";
+            color: black;
+            mso-font-kerning: .5pt;
+            mso-ansi-language: RU;
+            mso-fareast-language: ZH-CN;
+            mso-bidi-font-weight: bold;
+        }
+        
+        span.SpellE {
+            mso-style-name: "";
+            mso-spl-e: yes;
+        }
+        
+        .MsoChpDefault {
+            mso-style-type: export-only;
+            mso-default-props: yes;
+            font-family: "Calibri", "sans-serif";
+            mso-ascii-font-family: Calibri;
+            mso-ascii-theme-font: minor-latin;
+            mso-fareast-font-family: Calibri;
+            mso-fareast-theme-font: minor-latin;
+            mso-hansi-font-family: Calibri;
+            mso-hansi-theme-font: minor-latin;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: minor-bidi;
+            mso-fareast-language: EN-US;
+        }
+        
+        .MsoPapDefault {
+            mso-style-type: export-only;
+            margin-bottom: 8.0pt;
+            line-height: 107%;
+        }
+        
+        @page WordSection1 {
+            size: 595.3pt 841.9pt;
+            margin: 2.0cm 42.5pt 2.0cm 3.0cm;
+            mso-header-margin: 35.4pt;
+            mso-footer-margin: 35.4pt;
+            mso-paper-source: 0;
+        }
+        
+        div.WordSection1 {
+            page: WordSection1;
+        }
+        /* List Definitions */
+        
+        @list l0 {
+            mso-list-id: 730270864;
+            mso-list-type: hybrid;
+            mso-list-template-ids: -380618486 68747279 69337113 69337115 69337103 69337113 69337115 69337103 69337113 69337115;
+        }
+        
+        @list l0:level1 {
+            mso-level-tab-stop: none;
+            mso-level-number-position: left;
+            margin-left: 50.2pt;
+            text-indent: -18.0pt;
+        }
+        
+        @list l0:level2 {
+            mso-level-number-format: alpha-lower;
+            mso-level-tab-stop: none;
+            mso-level-number-position: left;
+            margin-left: 86.2pt;
+            text-indent: -18.0pt;
+        }
+        
+        @list l0:level3 {
+            mso-level-number-format: roman-lower;
+            mso-level-tab-stop: none;
+            mso-level-number-position: right;
+            margin-left: 122.2pt;
+            text-indent: -9.0pt;
+        }
+        
+        @list l0:level4 {
+            mso-level-tab-stop: none;
+            mso-level-number-position: left;
+            margin-left: 158.2pt;
+            text-indent: -18.0pt;
+        }
+        
+        @list l0:level5 {
+            mso-level-number-format: alpha-lower;
+            mso-level-tab-stop: none;
+            mso-level-number-position: left;
+            margin-left: 194.2pt;
+            text-indent: -18.0pt;
+        }
+        
+        @list l0:level6 {
+            mso-level-number-format: roman-lower;
+            mso-level-tab-stop: none;
+            mso-level-number-position: right;
+            margin-left: 230.2pt;
+            text-indent: -9.0pt;
+        }
+        
+        @list l0:level7 {
+            mso-level-tab-stop: none;
+            mso-level-number-position: left;
+            margin-left: 266.2pt;
+            text-indent: -18.0pt;
+        }
+        
+        @list l0:level8 {
+            mso-level-number-format: alpha-lower;
+            mso-level-tab-stop: none;
+            mso-level-number-position: left;
+            margin-left: 302.2pt;
+            text-indent: -18.0pt;
+        }
+        
+        @list l0:level9 {
+            mso-level-number-format: roman-lower;
+            mso-level-tab-stop: none;
+            mso-level-number-position: right;
+            margin-left: 338.2pt;
+            text-indent: -9.0pt;
+        }
+        
+        ol {
+            margin-bottom: 0cm;
+        }
+        
+        ul {
+            margin-bottom: 0cm;
+        }
+        
+        -->
+    </style>
+    <!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"������� �������";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+</style>
+<![endif]-->
+    <!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]-->
+    <!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=UK style='tab-interval:35.4pt'>
+
+    <div class=WordSection1>
+
+        <h1>
+            <a name="_Toc97140076"></a><a name="_Toc57382981"><span style='mso-bookmark:
+_Toc97140076'><span lang=EN-US style='mso-ansi-language:EN-US'>3. DATA
+MANIPULATION USING SQL LANGUAGE: SELECT QUERIES AND THEIR BASIC FEATURES</span></span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h1>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='mso-ansi-language:EN-US'>Goal:</span></b><span lang=EN-US style='mso-ansi-language:EN-US'> learn how to use the SQL SELECT statement for
+data querying, using the MySQL database.<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h2><a name="_Toc97140077"><span lang=EN-US style='mso-ansi-language:EN-US'>3.1.
+Create and execute SQL SELECT queries</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h2>
+
+        <h3><a name="_Toc97140078"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+1. Basic SELECT query</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Form a list
+of goods delivered by supplier 1 (<span class=SpellE>Petrov</span> P. P.) under contract 1 (Figure 3.1).
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="�������_x0020_41" o:spid="_x0000_i1058" type="#_x0000_t75"
+ style='width:453.6pt;height:49.8pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=83
+src="mysql-select.files/image002.jpg" v:shapes="�������_x0020_41"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_40" o:spid="_x0000_i1057"
+ type="#_x0000_t75" style='width:453pt;height:80.4pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image003.png" o:title="" cropbottom="30981f"/>
+</v:shape><![endif]--><![if !vml]><img width=755 height=134
+src="mysql-select.files/image004.jpg" v:shapes="�������_x0020_40"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.1<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h3><a name="_Toc97140079"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+2. SELECT with the BETWEEN clause</span></a><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Form a list
+of the goods delivered by supplier 1 (<span class=SpellE>Petrov</span> P. P.) in the period from 2018-09-05 to 09/08/2012 (Figure 3.2).
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span style='mso-fareast-language:UK;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="�������_x0020_39" o:spid="_x0000_i1056" type="#_x0000_t75" style='width:453.6pt;
+ height:65.4pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image005.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=109
+src="mysql-select.files/image006.jpg" v:shapes="�������_x0020_39"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_38" o:spid="_x0000_i1055"
+ type="#_x0000_t75" style='width:453pt;height:120pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image007.png" o:title="" cropbottom="14299f"/>
+</v:shape><![endif]--><![if !vml]><img width=755 height=200
+src="mysql-select.files/image008.jpg" v:shapes="�������_x0020_38"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.2<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h3><a name="_Toc97140080"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+3. SELECT with the MONTH and YEAR functions</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Form a list
+of goods that were delivered in month 9 of 2018 including the name of the
+supplier and delivery date (Figure 3.3).<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_37" o:spid="_x0000_i1054"
+ type="#_x0000_t75" style='width:453.6pt;height:51pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image009.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=85
+src="mysql-select.files/image010.jpg" v:shapes="�������_x0020_37"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_36" o:spid="_x0000_i1053"
+ type="#_x0000_t75" style='width:453.6pt;height:206.4pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image011.png" o:title="" cropbottom="21241f"/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=344
+src="mysql-select.files/image012.jpg" v:shapes="�������_x0020_36"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.3<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h3><a name="_Toc97140081"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+4. SELECT with the SUM function</span></a><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Form a list
+of contracts (number, date, title) and the total amount for each contract
+(batch size multiplied by the price per unit and summed up by the contract).
+The list should be sorted by contract numbers (Figure 3.4).<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_35" o:spid="_x0000_i1052"
+ type="#_x0000_t75" style='width:453.6pt;height:54pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image013.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=90
+src="mysql-select.files/image014.jpg" v:shapes="�������_x0020_35"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_34" o:spid="_x0000_i1051"
+ type="#_x0000_t75" style='width:453.6pt;height:124.8pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image015.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=208
+src="mysql-select.files/image015.png" v:shapes="�������_x0020_34"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.4<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h3><a name="_Toc97140082"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+5. SELECT with filtering before grouping</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Form a list
+of contracts (number, date, title) and the total amount for each contract
+(batch size multiplied by the price per unit and summed up by the contract).
+The list should be sorted by increasing the total amounts for each contract.
+After that, the filter must be applied to the list, in order to exclude from
+the result of the query those records for which the contract number is less
+than 4 (Figure 3.5).<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_33" o:spid="_x0000_i1050"
+ type="#_x0000_t75" style='width:453.6pt;height:64.2pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image016.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=107
+src="mysql-select.files/image017.jpg" v:shapes="�������_x0020_33"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_32" o:spid="_x0000_i1049"
+ type="#_x0000_t75" style='width:453.6pt;height:115.8pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image018.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=193
+src="mysql-select.files/image018.png" v:shapes="�������_x0020_32"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.5<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h3><a name="_Toc97140083"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+6. SELECT with the nested query</span></a><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Display the
+information on the largest batch of goods in all contracts with the supplier,
+as well as the number and the date of the contract (Figure 3.6).<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_31" o:spid="_x0000_i1048"
+ type="#_x0000_t75" style='width:453.6pt;height:68.4pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image019.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=114
+src="mysql-select.files/image020.jpg" v:shapes="�������_x0020_31"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_30" o:spid="_x0000_i1047"
+ type="#_x0000_t75" style='width:453.6pt;height:98.4pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image021.png" o:title="" cropbottom="44289f"/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=164
+src="mysql-select.files/image022.jpg" v:shapes="�������_x0020_30"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.6<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h3><a name="_Toc97140084"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+7. SELECT with the NOT IN operator</span></a><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Form a list
+of suppliers (name and code) with which no contract has been concluded (Figure
+3.7).<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_29" o:spid="_x0000_i1046"
+ type="#_x0000_t75" style='width:368.4pt;height:27pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image023.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=614 height=45
+src="mysql-select.files/image024.jpg" v:shapes="�������_x0020_29"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_28" o:spid="_x0000_i1045"
+ type="#_x0000_t75" style='width:453.6pt;height:56.4pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image025.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=94
+src="mysql-select.files/image026.jpg" v:shapes="�������_x0020_28"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.7<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h3><a name="_Toc97140085"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+8. SELECT with the AVG function</span></a><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Form a list
+of the names of supplied goods with an indication of the average delivery price
+per unit (regardless of the supplier) (Figure 3.8).<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_27" o:spid="_x0000_i1044"
+ type="#_x0000_t75" style='width:397.2pt;height:43.2pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image027.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=662 height=72
+src="mysql-select.files/image028.jpg" v:shapes="�������_x0020_27"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_26" o:spid="_x0000_i1043"
+ type="#_x0000_t75" style='width:453.6pt;height:137.4pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image029.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=229
+src="mysql-select.files/image030.jpg" v:shapes="�������_x0020_26"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.8<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h3><a name="_Toc97140086"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+9. SELECT with filtering by the nested query result</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Form a list
+of goods (name, quantity and price, supplier), for which the price per unit is
+more than average (Figure 3.9).<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_25" o:spid="_x0000_i1042"
+ type="#_x0000_t75" style='width:453.6pt;height:46.2pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image031.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=77
+src="mysql-select.files/image032.jpg" v:shapes="�������_x0020_25"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_24" o:spid="_x0000_i1041"
+ type="#_x0000_t75" style='width:453.6pt;height:94.8pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image033.png" o:title="" cropbottom="45090f"/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=158
+src="mysql-select.files/image034.jpg" v:shapes="�������_x0020_24"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.9<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h3><a name="_Toc97140087"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+10. SELECT with the LIMIT clause</span></a><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Display
+information about the five most expensive products (name, price per unit,
+supplier) (Figure 3.10).<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_23" o:spid="_x0000_i1040"
+ type="#_x0000_t75" style='width:453.6pt;height:55.8pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image035.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=93
+src="mysql-select.files/image036.jpg" v:shapes="�������_x0020_23"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_22" o:spid="_x0000_i1039"
+ type="#_x0000_t75" style='width:453.6pt;height:89.4pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image037.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=149
+src="mysql-select.files/image038.jpg" v:shapes="�������_x0020_22"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.10<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h3><a name="_Toc97140088"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+11. SELECT with NULL and string functions</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Form a
+supplier list with code, address, and supplier information. When forming
+supplier data for individuals, display the surname and initials, and for legal
+entities � the name (Figure 3.11).<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_21" o:spid="_x0000_i1038"
+ type="#_x0000_t75" style='width:453.6pt;height:58.8pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image039.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=98
+src="mysql-select.files/image040.jpg" v:shapes="�������_x0020_21"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_20" o:spid="_x0000_i1037"
+ type="#_x0000_t75" style='width:453.6pt;height:123pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image041.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=205
+src="mysql-select.files/image042.jpg" v:shapes="�������_x0020_20"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.11<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h3><a name="_Toc97140089"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+12. Complex SELECT with NULL and string functions</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Form a list
+of contracts (include the number, delivery date, and supplier information), the
+total number of goods delivered and the total amount for each contract. When
+forming the supplier data for individuals, display the last name and initials,
+and for legal entities � the name.<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>The result
+should contain only those contracts based on which the goods were delivered
+(e.g., the result of the query should not contain so-called �empty� contracts)
+(Figure 3.12).<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_19" o:spid="_x0000_i1036"
+ type="#_x0000_t75" style='width:453.6pt;height:141pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image043.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=235
+src="mysql-select.files/image044.jpg" v:shapes="�������_x0020_19"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_18" o:spid="_x0000_i1035"
+ type="#_x0000_t75" style='width:453.6pt;height:165pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image045.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=275
+src="mysql-select.files/image046.jpg" v:shapes="�������_x0020_18"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.12<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h3><a name="_Toc97140090"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+13. Combining two SELECT queries using the UNION clause</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Form a list
+of goods (with the number of the contract and delivery date) delivered by
+suppliers 1 (<span class=SpellE>Petrov</span> P. P.) and 2 (<span class=SpellE>Interfruit</span>) (Figure 3.13).
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_17" o:spid="_x0000_i1034"
+ type="#_x0000_t75" style='width:453.6pt;height:138.6pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image047.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=231
+src="mysql-select.files/image048.jpg" v:shapes="�������_x0020_17"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_16" o:spid="_x0000_i1033"
+ type="#_x0000_t75" style='width:453.6pt;height:252pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image049.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=420
+src="mysql-select.files/image050.jpg" v:shapes="�������_x0020_16"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.13<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h3><a name="_Toc97140091"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+14. SELECT with the DISTINCT and UNION clauses</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Form a
+nomenclature of goods (a list of product names) that were supplied only by
+supplier 1 (<span class=SpellE>Petrov</span> P. P.), or only supplier 2 (<span class=SpellE>Interfruit</span>), or both supplier 1 and supplier 2 (Figure 3.14).
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_15" o:spid="_x0000_i1032"
+ type="#_x0000_t75" style='width:453.6pt;height:84.6pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image051.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=141
+src="mysql-select.files/image052.jpg" v:shapes="�������_x0020_15"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:
+107%;font-family:"Arial","sans-serif";mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-bidi-font-size:
+10.0pt;line-height:107%;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black;mso-font-kerning:.5pt;mso-ansi-language:EN-US;
+mso-fareast-language:ZH-CN;mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_14" o:spid="_x0000_i1031"
+ type="#_x0000_t75" style='width:453.6pt;height:148.8pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image053.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=248
+src="mysql-select.files/image053.png" v:shapes="�������_x0020_14"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.14<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h3><a name="_Toc97140092"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+15. SELECT with the HAVING clause</span></a><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Generate a
+list of items that should demonstrate the frequency of deliveries. Include only
+items that shipped more than once to the list. The list should be sorted by
+decreasing the supply frequency (Figure 3.15).<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_13" o:spid="_x0000_i1030"
+ type="#_x0000_t75" style='width:453.6pt;height:68.4pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image054.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=114
+src="mysql-select.files/image055.jpg" v:shapes="�������_x0020_13"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_12" o:spid="_x0000_i1029"
+ type="#_x0000_t75" style='width:453.6pt;height:121.2pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image056.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=202
+src="mysql-select.files/image057.jpg" v:shapes="�������_x0020_12"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.15<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h3><a name="_Toc97140093"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+16. SELECT with the IF function</span></a><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Retrieve
+data on quantitative dynamics of goods deliveries during 2018. The data should
+be aggregated in months and presented as a table with lines of product names,
+and columns are the numbers of months in 2018. At the intersection of a row and
+a column, the quantity of this product delivered in this month should be
+displayed (Figure 3.16).<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_11" o:spid="_x0000_i1028"
+ type="#_x0000_t75" style='width:453.6pt;height:165.6pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image058.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=276
+src="mysql-select.files/image059.jpg" v:shapes="�������_x0020_11"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_10" o:spid="_x0000_i1027"
+ type="#_x0000_t75" style='width:453.6pt;height:189pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image060.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=315
+src="mysql-select.files/image061.jpg" v:shapes="�������_x0020_10"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.16<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h3><a name="_Toc97140094"><span lang=EN-US style='mso-ansi-language:EN-US'>Query
+17. SELECT with the MONTHNAME function</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h3>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>Form a list
+of supplied goods. For each item in this list, the following information must
+be shown: contract number, product name, unit number, unit price, delivery
+date, month name, and year number (Figure 3.17).<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_9" o:spid="_x0000_i1026"
+ type="#_x0000_t75" style='width:396.6pt;height:94.8pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image062.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=661 height=158
+src="mysql-select.files/image063.jpg" v:shapes="�������_x0020_9"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=a><span style='mso-ansi-language:UK;mso-fareast-language:UK;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="�������_x0020_8" o:spid="_x0000_i1025"
+ type="#_x0000_t75" style='width:453.6pt;height:175.8pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="mysql-select.files/image064.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=756 height=293
+src="mysql-select.files/image065.jpg" v:shapes="�������_x0020_8"><![endif]></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+        <p class=a><span lang=EN-US style='mso-ansi-language:EN-US'>Figure 3.17<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <h2><a name="_Toc97140095"><span lang=EN-US style='mso-ansi-language:EN-US'>3.2.
+Questions</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h2>
+
+        <p class=MsoListParagraphCxSpFirst style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>What
+SQL statement is used to retrieve data from one or several tables?<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>Show
+the common structure of the SELECT statement.<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>Which
+form of the SQL SELECT statement might be used if it is required to display all
+columns of a certain table?<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>Which
+construction is used to select records that satisfy search criteria?<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>What
+keyword is used to exclude duplicate rows?<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>Which
+construction is used to sort values by single or multiple columns?<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>How
+the reverse sorting might be implemented?<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>Which
+keyword is used to limit the range of retrieved records?<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>Which
+construction is used to group retrieved records?<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>10.<span style='font:7.0pt "Times New Roman"'>
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>Name
+the aggregation functions, their purpose, and basic features.<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>11.<span style='font:7.0pt "Times New Roman"'>
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>How
+to give the new name to a specific column?<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>12.<span style='font:7.0pt "Times New Roman"'>
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>What
+is the purpose of the HAVING keyword? What is the difference between this
+keyword from WHERE?<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>13.<span style='font:7.0pt "Times New Roman"'>
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>Name
+basic arithmetic, logic, and comparison operators, their purpose, and examples
+of usage.<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>14.<span style='font:7.0pt "Times New Roman"'>
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>The
+purpose of the MONTH function and examples of its usage.<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>15.<span style='font:7.0pt "Times New Roman"'>
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>The
+purpose of the YEAR function and examples of its usage.<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>16.<span style='font:7.0pt "Times New Roman"'>
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>The
+purpose of the IFNULL function and examples of its usage.<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>17.<span style='font:7.0pt "Times New Roman"'>
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>The
+purpose of the CONCAT function and examples of its usage.<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>18.<span style='font:7.0pt "Times New Roman"'>
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>The
+purpose of the RTRIM function and examples of its usage.<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>19.<span style='font:7.0pt "Times New Roman"'>
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>The
+purpose of the SUBSTRING function and examples of its usage.<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpMiddle style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>20.<span style='font:7.0pt "Times New Roman"'>
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>The
+purpose of the IF function and examples of its usage.<o:p></o:p></span></p>
+
+        <p class=MsoListParagraphCxSpLast style='margin-left:0cm;mso-add-space:auto;
+mso-list:l0 level1 lfo1'>
+            <![if !supportLists]><span lang=EN-US style='mso-fareast-font-family:Arial;mso-bidi-font-family:Arial;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>21.<span style='font:7.0pt "Times New Roman"'>
+</span></span>
+            </span>
+            <![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>Which
+operator is used to combine the results of two queries?<o:p></o:p></span></p>
+
+        <p class=MsoNormal style='text-indent:0cm'>
+            <o:p>&nbsp;</o:p>
+        </p>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,3434 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=ProgId content=Word.Document>
+    <meta name=Generator content="Microsoft Word 15">
+    <meta name=Originator content="Microsoft Word 15">
+    <link rel=File-List href="sql-source-code.files/filelist.xml">
+    <!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Andrii Kopp</o:Author>
+  <o:LastAuthor>Andrii Kopp</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2022-03-11T09:54:00Z</o:Created>
+  <o:LastSaved>2022-03-11T09:54:00Z</o:LastSaved>
+  <o:Pages>27</o:Pages>
+  <o:Words>14632</o:Words>
+  <o:Characters>8341</o:Characters>
+  <o:Lines>69</o:Lines>
+  <o:Paragraphs>45</o:Paragraphs>
+  <o:CharactersWithSpaces>22928</o:CharactersWithSpaces>
+  <o:Version>15.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+    <link rel=themeData href="sql-source-code.files/themedata.thmx">
+    <link rel=colorSchemeMapping href="sql-source-code.files/colorschememapping.xml">
+    <!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>UK</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]-->
+    <!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="371">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+    <style>
+        <!--
+        /* Font Definitions */
+        
+        @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+            mso-font-charset: 1;
+            mso-generic-font-family: roman;
+            mso-font-format: other;
+            mso-font-pitch: variable;
+            mso-font-signature: 0 0 0 0 0 0;
+        }
+        
+        @font-face {
+            font-family: Calibri;
+            panose-1: 2 15 5 2 2 2 4 3 2 4;
+            mso-font-charset: 204;
+            mso-generic-font-family: swiss;
+            mso-font-pitch: variable;
+            mso-font-signature: -469750017 -1073732485 9 0 511 0;
+        }
+        /* Style Definitions */
+        
+        p.MsoNormal,
+        li.MsoNormal,
+        div.MsoNormal {
+            mso-style-unhide: no;
+            mso-style-qformat: yes;
+            mso-style-parent: "";
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            text-align: justify;
+            text-indent: 14.2pt;
+            line-height: 150%;
+            mso-pagination: widow-orphan;
+            font-size: 14.0pt;
+            mso-bidi-font-size: 11.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-fareast-font-family: Calibri;
+            mso-fareast-theme-font: minor-latin;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: minor-bidi;
+            mso-fareast-language: EN-US;
+        }
+        
+        h1 {
+            mso-style-priority: 9;
+            mso-style-unhide: no;
+            mso-style-qformat: yes;
+            mso-style-link: "��������� 1 ����";
+            mso-style-next: �������;
+            margin-top: 12.0pt;
+            margin-right: 0cm;
+            margin-bottom: 12.0pt;
+            margin-left: 0cm;
+            text-align: center;
+            line-height: 150%;
+            mso-pagination: widow-orphan lines-together;
+            page-break-after: avoid;
+            mso-outline-level: 1;
+            font-size: 16.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-fareast-font-family: "Times New Roman";
+            mso-fareast-theme-font: major-fareast;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: major-bidi;
+            mso-font-kerning: 0pt;
+            mso-fareast-language: EN-US;
+            mso-bidi-font-weight: normal;
+        }
+        
+        h2 {
+            mso-style-priority: 9;
+            mso-style-qformat: yes;
+            mso-style-link: "��������� 2 ����";
+            mso-style-next: �������;
+            margin-top: 6.0pt;
+            margin-right: 0cm;
+            margin-bottom: 6.0pt;
+            margin-left: 0cm;
+            text-align: justify;
+            text-indent: 14.2pt;
+            line-height: 150%;
+            mso-pagination: widow-orphan lines-together;
+            page-break-after: avoid;
+            mso-outline-level: 2;
+            font-size: 14.0pt;
+            mso-bidi-font-size: 13.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-fareast-font-family: "Times New Roman";
+            mso-fareast-theme-font: major-fareast;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: major-bidi;
+            mso-fareast-language: EN-US;
+            mso-bidi-font-weight: normal;
+        }
+        
+        span.1 {
+            mso-style-name: "��������� 1 ����";
+            mso-style-priority: 9;
+            mso-style-unhide: no;
+            mso-style-locked: yes;
+            mso-style-link: "��������� 1";
+            mso-ansi-font-size: 16.0pt;
+            mso-bidi-font-size: 16.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-ascii-font-family: Arial;
+            mso-fareast-font-family: "Times New Roman";
+            mso-fareast-theme-font: major-fareast;
+            mso-hansi-font-family: Arial;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: major-bidi;
+            font-weight: bold;
+            mso-bidi-font-weight: normal;
+        }
+        
+        span.2 {
+            mso-style-name: "��������� 2 ����";
+            mso-style-priority: 9;
+            mso-style-unhide: no;
+            mso-style-locked: yes;
+            mso-style-link: "��������� 2";
+            mso-ansi-font-size: 14.0pt;
+            mso-bidi-font-size: 13.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-ascii-font-family: Arial;
+            mso-fareast-font-family: "Times New Roman";
+            mso-fareast-theme-font: major-fareast;
+            mso-hansi-font-family: Arial;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: major-bidi;
+            font-weight: bold;
+            mso-bidi-font-weight: normal;
+        }
+        
+        span.SpellE {
+            mso-style-name: "";
+            mso-spl-e: yes;
+        }
+        
+        .MsoChpDefault {
+            mso-style-type: export-only;
+            mso-default-props: yes;
+            font-family: "Calibri", "sans-serif";
+            mso-ascii-font-family: Calibri;
+            mso-ascii-theme-font: minor-latin;
+            mso-fareast-font-family: Calibri;
+            mso-fareast-theme-font: minor-latin;
+            mso-hansi-font-family: Calibri;
+            mso-hansi-theme-font: minor-latin;
+            mso-bidi-font-family: "Times New Roman";
+            mso-bidi-theme-font: minor-bidi;
+            mso-fareast-language: EN-US;
+        }
+        
+        .MsoPapDefault {
+            mso-style-type: export-only;
+            margin-bottom: 8.0pt;
+            line-height: 107%;
+        }
+        
+        @page WordSection1 {
+            size: 595.3pt 841.9pt;
+            margin: 2.0cm 42.5pt 2.0cm 3.0cm;
+            mso-header-margin: 35.4pt;
+            mso-footer-margin: 35.4pt;
+            mso-paper-source: 0;
+        }
+        
+        div.WordSection1 {
+            page: WordSection1;
+        }
+        
+        -->
+    </style>
+    <!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"������� �������";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+</style>
+<![endif]-->
+    <!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]-->
+    <!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=UK style='tab-interval:35.4pt'>
+
+    <div class=WordSection1>
+
+        <h1><a name="_Toc97140141"><span lang=EN-US style='mso-ansi-language:EN-US'>APPENDIX
+1. SQL SOURCE CODE FOR THE CONSIDERED EXERCISES</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h1>
+
+        <h2><a name="_Toc97140142"><span lang=EN-US style='mso-ansi-language:EN-US'>A1.1
+Database creation using SQL language</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h2>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>-- create
+database<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CREATE
+DATABASE supply;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>-- main
+database<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CREATE
+TABLE supplier (<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>supplier_id</span></span><span lang=EN-US style='mso-ansi-language:EN-US'>
+int NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>supplier_address</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> varchar(100) NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>supplier_phone</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> varchar(20) NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>PRIMARY KEY
+(<span class=SpellE>supplier_id</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>)
+ENGINE=InnoDB;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CREATE
+TABLE <span class=SpellE>supplier_person</span> (
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>supplier_id</span></span><span lang=EN-US style='mso-ansi-language:EN-US'>
+int NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>supplier_last_name</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> varchar(20) NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>supplier_first_name</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> varchar(20) NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>supplier_middle_name</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> varchar(20) NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>PRIMARY KEY
+(<span class=SpellE>supplier_id</span>),
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FOREIGN KEY
+(<span class=SpellE>supplier_id</span>) REFERENCES supplier(<span class=SpellE>supplier_id</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>)
+ENGINE=InnoDB;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CREATE
+TABLE <span class=SpellE>supplier_org</span> (
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>supplier_id</span></span><span lang=EN-US style='mso-ansi-language:EN-US'>
+int NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>supplier_org_name</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> varchar(20) NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>PRIMARY KEY
+(<span class=SpellE>supplier_id</span>),
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FOREIGN KEY
+(<span class=SpellE>supplier_id</span>) REFERENCES supplier(<span class=SpellE>supplier_id</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>)
+ENGINE=InnoDB;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CREATE
+TABLE contract (<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>contract_number</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> int NOT NULL AUTO_INCREMENT,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>contract_date</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> timestamp NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>supplier_id</span></span><span lang=EN-US style='mso-ansi-language:EN-US'>
+int NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>contract_note</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> varchar(100),<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>PRIMARY KEY
+(<span class=SpellE>contract_number</span>),
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FOREIGN KEY
+(<span class=SpellE>supplier_id</span>) REFERENCES supplier(<span class=SpellE>supplier_id</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>)
+ENGINE=InnoDB;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CREATE
+TABLE supplied (<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>contract_number</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> int NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>supplied_product</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> varchar(20) NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>supplied_amount</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> decimal(4,0) NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>supplied_cost</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> decimal(8,2) NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>PRIMARY KEY
+(<span class=SpellE>contract_number</span>, <span class=SpellE>supplied_product</span>),
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FOREIGN KEY
+(<span class=SpellE>contract_number</span>) REFERENCES contract(<span class=SpellE>contract_number</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>)
+ENGINE=InnoDB;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>--
+additional table<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CREATE
+TABLE <span class=SpellE>contract_delivered</span> (
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>contract_number</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> int NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>delivery_date</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> timestamp NOT NULL,<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span class=SpellE><span lang=EN-US style='mso-ansi-language:
+EN-US'>delivery_note</span></span><span lang=EN-US style='mso-ansi-language:
+EN-US'> varchar(100),<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>PRIMARY KEY
+(<span class=SpellE>contract_number</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>)
+ENGINE=InnoDB;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>-- add
+relation<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+<span class=SpellE>contract_delivered</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ADD
+CONSTRAINT <span class=SpellE>contract_number_fk</span> FOREIGN KEY (<span class=SpellE>contract_number</span>) REFERENCES contract(<span class=SpellE>contract_number</span>);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>-- drop
+table<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DROP TABLE <span
+class=SpellE>contract_delivered</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:
+107%;font-family:"Arial","sans-serif";mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='mso-bidi-font-size:13.0pt;line-height:107%;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:major-fareast;mso-bidi-font-family:
+"Times New Roman";mso-bidi-theme-font:major-bidi;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+        <h2><a name="_Toc97140143"><span lang=EN-US style='mso-ansi-language:EN-US'>A1.2
+Data manipulation using SQL language: insert, update, and delete</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h2>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>-- insert
+queries<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplier (<span class=SpellE>supplier_id</span>, <span class=SpellE>supplier_address</span>,
+            <span class=SpellE>supplier_phone</span>) VALUES (1, 'Kharkiv, Nauky av., 55, apt. 108', 'phone: 32-18-44');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplier (<span class=SpellE>supplier_id</span>, <span class=SpellE>supplier_address</span>,
+            <span class=SpellE>supplier_phone</span>) VALUES (2, 'Kyiv, <span class=SpellE>Peremohy</span> av., 154, apt. 3', '');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplier (<span class=SpellE>supplier_id</span>, <span class=SpellE>supplier_address</span>,
+            <span class=SpellE>supplier_phone</span>) VALUES (3, 'Kharkiv, <span class=SpellE>Pushkinska</span> str., 77', 'phone: 33-33-44, fax: 22-12-33');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplier (<span class=SpellE>supplier_id</span>, <span class=SpellE>supplier_address</span>,
+            <span class=SpellE>supplier_phone</span>) VALUES (4, '<span class=SpellE>Odesa</span>,
+            <span class=SpellE>Derebasivska</span> str., 75', '');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplier (<span class=SpellE>supplier_id</span>, <span class=SpellE>supplier_address</span>,
+            <span class=SpellE>supplier_phone</span>) VALUES (5, 'Poltava, <span class=SpellE>Soborna</span> str., 15, apt. 43', '');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+<span class=SpellE>supplier_person</span> (<span class=SpellE>supplier_id</span>,
+            <span class=SpellE>supplier_last_name</span>, <span class=SpellE>supplier_first_name</span>,
+            <span class=SpellE>supplier_middle_name</span>) VALUES (1, '<span class=SpellE>Petrov</span>', '
+            <span class=SpellE>Pavlo</span>', '<span class=SpellE>Petrovych</span>');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+<span class=SpellE>supplier_person</span> (<span class=SpellE>supplier_id</span>,
+            <span class=SpellE>supplier_last_name</span>, <span class=SpellE>supplier_first_name</span>,
+            <span class=SpellE>supplier_middle_name</span>) VALUES (3, 'Ivanov', '<span class=SpellE>Illia</span>', '<span class=SpellE>Illych</span>');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+<span class=SpellE>supplier_person</span> (<span class=SpellE>supplier_id</span>,
+            <span class=SpellE>supplier_last_name</span>, <span class=SpellE>supplier_first_name</span>,
+            <span class=SpellE>supplier_middle_name</span>) VALUES (5, '<span class=SpellE>Sydorov</span>', 'Serhii', '<span class=SpellE>Stepanovych</span>');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+<span class=SpellE>supplier_org</span> (<span class=SpellE>supplier_id</span>, <span class=SpellE>supplier_org_name</span>) VALUES (2, '<span class=SpellE>Interfruit</span> Ltd.');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+<span class=SpellE>supplier_org</span> (<span class=SpellE>supplier_id</span>, <span class=SpellE>supplier_org_name</span>) VALUES (4, '<span class=SpellE>Transservice</span> LLC');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+contract (<span class=SpellE>contract_date</span>, <span class=SpellE>supplier_id</span>,
+            <span class=SpellE>contract_note</span>) VALUES ('2018-09-01', 1, 'Order 34 on 30.08.2018');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+contract (<span class=SpellE>contract_date</span>, <span class=SpellE>supplier_id</span>,
+            <span class=SpellE>contract_note</span>) VALUES ('2018-09-10', 1, 'Invoice 08-78 on 28.08.2018');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+contract (<span class=SpellE>contract_date</span>, <span class=SpellE>supplier_id</span>,
+            <span class=SpellE>contract_note</span>) VALUES ('2018-09-23', 3, 'Order 56 on 28.08.2018');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+contract (<span class=SpellE>contract_date</span>, <span class=SpellE>supplier_id</span>,
+            <span class=SpellE>contract_note</span>) VALUES ('2018-09-24', 2, 'Order 74 on 11.09.2018');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+contract (<span class=SpellE>contract_date</span>, <span class=SpellE>supplier_id</span>,
+            <span class=SpellE>contract_note</span>) VALUES ('2018-10-02', 2, 'Invoice 09-12 on 21.09.2018');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied (<span class=SpellE>contract_number</span>, <span class=SpellE>supplied_product</span>,
+            <span class=SpellE>supplied_amount</span>, <span class=SpellE>supplied_cost</span>) VALUES (1, 'TV', 10, 1300);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied (<span class=SpellE>contract_number</span>, <span class=SpellE>supplied_product</span>,
+            <span class=SpellE>supplied_amount</span>, <span class=SpellE>supplied_cost</span>) VALUES (1, 'Audio Player', 25, 700);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied (<span class=SpellE>contract_number</span>, <span class=SpellE>supplied_product</span>,
+            <span class=SpellE>supplied_amount</span>, <span class=SpellE>supplied_cost</span>) VALUES (1, 'Video Player', 12, 750);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied (<span class=SpellE>contract_number</span>, <span class=SpellE>supplied_product</span>,
+            <span class=SpellE>supplied_amount</span>, <span class=SpellE>supplied_cost</span>) VALUES (2, 'Stereo System', 11, 500);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied (<span class=SpellE>contract_number</span>, <span class=SpellE>supplied_product</span>,
+            <span class=SpellE>supplied_amount</span>, <span class=SpellE>supplied_cost</span>) VALUES (2, 'Audio Player', 5, 450);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied (<span class=SpellE>contract_number</span>, <span class=SpellE>supplied_product</span>,
+            <span class=SpellE>supplied_amount</span>, <span class=SpellE>supplied_cost</span>) VALUES (2, 'Video Player', 8, 450);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied (<span class=SpellE>contract_number</span>, <span class=SpellE>supplied_product</span>,
+            <span class=SpellE>supplied_amount</span>, <span class=SpellE>supplied_cost</span>) VALUES (3, 'TV', 52, 900);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied (<span class=SpellE>contract_number</span>, <span class=SpellE>supplied_product</span>,
+            <span class=SpellE>supplied_amount</span>, <span class=SpellE>supplied_cost</span>) VALUES (3, 'Audio Player', 11, 550);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied (<span class=SpellE>contract_number</span>, <span class=SpellE>supplied_product</span>,
+            <span class=SpellE>supplied_amount</span>, <span class=SpellE>supplied_cost</span>) VALUES (3, 'Monitor', 85, 550);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied (<span class=SpellE>contract_number</span>, <span class=SpellE>supplied_product</span>,
+            <span class=SpellE>supplied_amount</span>, <span class=SpellE>supplied_cost</span>) VALUES (4, 'TV', 56, 990);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied (<span class=SpellE>contract_number</span>, <span class=SpellE>supplied_product</span>,
+            <span class=SpellE>supplied_amount</span>, <span class=SpellE>supplied_cost</span>) VALUES (4, 'Audio Player', 22, 320);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied (<span class=SpellE>contract_number</span>, <span class=SpellE>supplied_product</span>,
+            <span class=SpellE>supplied_amount</span>, <span class=SpellE>supplied_cost</span>) VALUES (4, 'Printer', 41, 350);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied (<span class=SpellE>contract_number</span>, <span class=SpellE>supplied_product</span>,
+            <span class=SpellE>supplied_amount</span>, <span class=SpellE>supplied_cost</span>) VALUES (5, 'TV', 14, 860);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied (<span class=SpellE>contract_number</span>, <span class=SpellE>supplied_product</span>,
+            <span class=SpellE>supplied_amount</span>, <span class=SpellE>supplied_cost</span>) VALUES (5, 'Audio Player', 33, 580);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied (<span class=SpellE>contract_number</span>, <span class=SpellE>supplied_product</span>,
+            <span class=SpellE>supplied_amount</span>, <span class=SpellE>supplied_cost</span>) VALUES (5, 'Video Player', 17, 850);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>--
+update/delete queries<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>UPDATE
+supplied<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SET <span
+class=SpellE>supplied_cost</span> = <span class=SpellE>supplied_cost</span> * 0.95
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE <span
+class=SpellE>contract_number</span> = 4 AND <span class=SpellE>supplied_product</span> = 'Printer';
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DELETE FROM
+supplied WHERE <span class=SpellE>contract_number</span> = 5;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:
+107%;font-family:"Arial","sans-serif";mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='mso-bidi-font-size:13.0pt;line-height:107%;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:major-fareast;mso-bidi-font-family:
+"Times New Roman";mso-bidi-theme-font:major-bidi;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+        <h2><a name="_Toc97140144"><span lang=EN-US style='mso-ansi-language:EN-US'>A1.3
+Data manipulation using SQL language: select queries and their basic features</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h2>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>-- select
+queries<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>supplied.contract_number</span>, <span class=SpellE>supplied.supplied_product</span>, supplier.*, <span class=SpellE>contract.contract_date</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+supplied, contract, supplier<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE <span
+class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>AND <span
+class=SpellE>supplier.supplier_id</span> = <span class=SpellE>contract.supplier_id</span> AND (<span class=SpellE>contract.contract_number</span> = 1
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>AND <span
+class=SpellE>contract.supplier_id</span> = 1);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>contract.contract_number</span>, <span class=SpellE>contract.contract_date</span>,
+            <span class=SpellE>supplied.supplied_product</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span><span class=SpellE>supplied.supplied_cost</span>, supplier.*
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+(supplier INNER JOIN contract ON <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>contract.supplier_id</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>INNER JOIN supplied ON <span class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE <span
+class=SpellE>contract.contract_date</span> BETWEEN '2018-09-05' AND '2018-09-12' AND
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span><span class=SpellE>supplier.supplier_id</span> = 1;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>contract.contract_number</span>, <span class=SpellE>contract.contract_date</span>,
+            <span class=SpellE>supplied.supplied_product</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span><span class=SpellE>supplied.supplied_cost</span>, supplier.*
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+(supplier INNER JOIN contract ON <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>contract.supplier_id</span>) INNER JOIN
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>supplied ON <span class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE
+MONTH(<span class=SpellE>contract.contract_date</span>) = 9 AND YEAR(<span class=SpellE>contract.contract_date</span>) = 2018;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>contract.contract_number</span>, <span class=SpellE>contract.contract_date</span>,
+            <span class=SpellE>contract.supplier_id</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SUM(<span class=SpellE>supplied.supplied_amount</span> * <span class=SpellE>supplied.supplied_cost</span>) AS `Sum`
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+contract INNER JOIN supplied ON <span class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>GROUP BY <span
+class=SpellE>contract.contract_number</span>, <span class=SpellE>contract.contract_date</span>,
+            <span class=SpellE>contract.supplier_id</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ORDER BY <span
+class=SpellE>contract.contract_number</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>contract.contract_number</span>, <span class=SpellE>contract.contract_date</span>,
+            <span class=SpellE>contract.supplier_id</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SUM(<span class=SpellE>supplied.supplied_amount</span> * <span class=SpellE>supplied.supplied_cost</span>) AS `Sum`
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+contract INNER JOIN supplied ON <span class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE <span
+class=SpellE>contract.contract_number</span> &lt; 4
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>GROUP BY <span
+class=SpellE>contract.contract_number</span>, <span class=SpellE>contract.contract_date</span>,
+            <span class=SpellE>contract.supplier_id</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ORDER BY <span
+class=SpellE>contract.contract_number</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>contract.contract_number</span>, <span class=SpellE>contract.contract_date</span>,
+            <span class=SpellE>contract.contract_note</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>supplier.*, <span class=SpellE>supplied.supplied_amount</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+contract, supplied, supplier<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE <span
+class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span> AND
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span><span class=SpellE>contract.supplier_id</span> = <span class=SpellE>supplier.supplier_id</span> AND
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span><span class=SpellE>supplied.supplied_amount</span> = (SELECT MAX(<span class=SpellE>supplied.supplied_amount</span>) FROM supplied);
+            <span style='mso-tab-count:1'>�� </span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplier<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE <span
+class=SpellE>supplier_id</span> NOT IN (SELECT <span class=SpellE>supplier_id</span> FROM supplier);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>supplied_product</span>, AVG(<span class=SpellE>supplied_cost</span>) AS `Average cost`
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+supplied<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>GROUP BY <span
+class=SpellE>supplied_product</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>supplied_product</span>, <span class=SpellE>supplied_amount</span>,
+            <span class=SpellE>supplied_cost</span>, supplier.*
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+(supplier INNER JOIN contract ON <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>contract.supplier_id</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>INNER JOIN supplied ON <span class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE <span
+class=SpellE>supplied_cost</span> &gt; (SELECT AVG(<span class=SpellE>supplied_cost</span>) FROM supplied);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>supplied_product</span>, <span class=SpellE>supplied_cost</span>, supplier.*
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+(supplier INNER JOIN contract ON <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>contract.supplier_id</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>INNER JOIN supplied ON <span class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ORDER BY <span
+class=SpellE>supplied_cost</span> DESC
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>LIMIT 1;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>supplier.supplier_id</span>, <span class=SpellE>supplier.supplier_address</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>IFNULL(<span class=SpellE>supplier_org.supplier_org_name</span>, CONCAT(RTRIM(
+            <span class=SpellE>supplier_person.supplier_last_name</span>), ' ',
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span>SUBSTRING(<span class=SpellE>supplier_person.supplier_first_name</span>, 1, 1), '. ',
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span>SUBSTRING(<span class=SpellE>supplier_person.supplier_middle_name</span>, 1, 1), '. ')) AS `Supplier`
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+(supplier LEFT JOIN <span class=SpellE>supplier_person</span> ON <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>supplier_person.supplier_id</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>LEFT JOIN <span class=SpellE>supplier_org</span> ON <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>supplier_org.supplier_id</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>contract.contract_number</span>, <span class=SpellE>contract.contract_date</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>IFNULL(<span class=SpellE>supplier_org.supplier_org_name</span>, CONCAT(RTRIM(
+            <span class=SpellE>supplier_person.supplier_last_name</span>), ' ',
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span>SUBSTRING(<span class=SpellE>supplier_person.supplier_first_name</span>, 1, 1), '. ',
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span>SUBSTRING(<span class=SpellE>supplier_person.supplier_middle_name</span>, 1, 1), '. ')) AS `Supplier`,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SUM(<span class=SpellE>supplied.supplied_amount</span>) AS `Size`,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SUM(<span class=SpellE>supplied.supplied_cost</span> * <span class=SpellE>supplied.supplied_amount</span>) AS `Total`
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+(((supplier LEFT JOIN <span class=SpellE>supplier_person</span> ON <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>supplier_person.supplier_id</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>LEFT JOIN <span class=SpellE>supplier_org</span> ON <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>supplier_org.supplier_id</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>INNER JOIN contract ON <span class=SpellE>contract.supplier_id</span> = <span class=SpellE>supplier.supplier_id</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>INNER JOIN supplied ON <span class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>GROUP BY <span
+class=SpellE>supplier.supplier_id</span>, <span class=SpellE>supplier.supplier_address</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>IFNULL(<span class=SpellE>supplier_org.supplier_org_name</span>, CONCAT(RTRIM(
+            <span class=SpellE>supplier_person.supplier_last_name</span>), ' ',
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span>SUBSTRING(<span class=SpellE>supplier_person.supplier_first_name</span>, 1, 1), '. ',
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span>SUBSTRING(<span class=SpellE>supplier_person.supplier_middle_name</span>, 1, 1), '. '))
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ORDER BY <span
+class=SpellE>contract.contract_number</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>supplied.contract_number</span>, <span class=SpellE>contract.contract_date</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span><span class=SpellE>supplied.supplied_product</span>,
+            <span class=SpellE>supplier.supplier_id</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+supplied, contract, supplier<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE <span
+class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>AND <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>contract.supplier_id</span> AND <span class=SpellE>contract.supplier_id</span> = 1
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>UNION<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>supplied.contract_number</span>, <span class=SpellE>contract.contract_date</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span><span class=SpellE>supplied.supplied_product</span>,
+            <span class=SpellE>supplier.supplier_id</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+supplied, contract, supplier<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE <span
+class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>AND <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>contract.supplier_id</span> AND <span class=SpellE>contract.supplier_id</span> = 2
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ORDER BY <span
+class=SpellE>supplier_id</span>, <span class=SpellE>contract_number</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT
+DISTINCT <span class=SpellE>supplied.supplied_product</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+supplied, contract<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE <span
+class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span> AND <span class=SpellE>contract.supplier_id</span> = 1
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>UNION<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT
+DISTINCT <span class=SpellE>supplied.supplied_product</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+supplied, contract<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE <span
+class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span> AND <span class=SpellE>contract.supplier_id</span> = 2
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ORDER BY <span
+class=SpellE>supplied_product</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>supplied_product</span>, COUNT(<span class=SpellE>supplied_product</span>) AS `<span class=SpellE>SupplyFrequency</span>`
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+supplied<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>GROUP BY <span
+class=SpellE>supplied_product</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>HAVING
+COUNT(<span class=SpellE>supplied_product</span>) &gt; 1
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ORDER BY COUNT(<span
+class=SpellE>supplied_product</span>) DESC;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>supplied_product</span>, SUM(IF(MONTH(<span class=SpellE>contract_date</span>) = 1, <span class=SpellE>supplied_amount</span>, 0)) AS `Jan`,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SUM(IF(MONTH(<span class=SpellE>contract_date</span>) = 2, <span class=SpellE>supplied_amount</span>, 0)) AS `Feb`,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SUM(IF(MONTH(<span class=SpellE>contract_date</span>) = 3, <span class=SpellE>supplied_amount</span>, 0)) AS `Mar`,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SUM(IF(MONTH(<span class=SpellE>contract_date</span>) = 4, <span class=SpellE>supplied_amount</span>, 0)) AS `Apr`,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SUM(IF(MONTH(<span class=SpellE>contract_date</span>) = 5, <span class=SpellE>supplied_amount</span>, 0)) AS `May`,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SUM(IF(MONTH(<span class=SpellE>contract_date</span>) = 6, <span class=SpellE>supplied_amount</span>, 0)) AS `Jun`,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SUM(IF(MONTH(<span class=SpellE>contract_date</span>) = 7, <span class=SpellE>supplied_amount</span>, 0)) AS `Jul`,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SUM(IF(MONTH(<span class=SpellE>contract_date</span>) = 8, <span class=SpellE>supplied_amount</span>, 0)) AS `Aug`,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SUM(IF(MONTH(<span class=SpellE>contract_date</span>) = 9, <span class=SpellE>supplied_amount</span>, 0)) AS `Sep`,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SUM(IF(MONTH(<span class=SpellE>contract_date</span>) = 10, <span class=SpellE>supplied_amount</span>, 0)) AS `Oct`,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SUM(IF(MONTH(<span class=SpellE>contract_date</span>) = 11, <span class=SpellE>supplied_amount</span>, 0)) AS `Nov`,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SUM(IF(MONTH(<span class=SpellE>contract_date</span>) = 12, <span class=SpellE>supplied_amount</span>, 0)) AS `Dec`
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+contract, supplied<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE <span
+class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span> AND YEAR(<span class=SpellE>contract_date</span>) = 2018
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>GROUP BY <span
+class=SpellE>supplied_product</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ORDER BY <span
+class=SpellE>supplied_product</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>supplied.contract_number</span>, <span class=SpellE>supplied.supplied_product</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span><span class=SpellE>supplied.supplied_amount</span>,
+            <span class=SpellE>supplied.supplied_cost</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span><span class=SpellE>contract.contract_date</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>MONTHNAME(<span class=SpellE>contract.contract_date</span>) AS `Month`,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>YEAR(<span class=SpellE>contract.contract_date</span>) AS `Year`
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+supplied, contract<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE <span
+class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:
+107%;font-family:"Arial","sans-serif";mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='mso-bidi-font-size:13.0pt;line-height:107%;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:major-fareast;mso-bidi-font-family:
+"Times New Roman";mso-bidi-theme-font:major-bidi;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+        <h2><a name="_Toc97140145"><span lang=EN-US style='mso-ansi-language:EN-US'>A1.4
+Creation and usage of views</span></a><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></h2>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>-- views<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>contract.contract_number</span>, <span class=SpellE>contract.contract_date</span>,
+            <span class=SpellE>supplier.supplier_id</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span><span class=SpellE>supplier_org.supplier_org_name</span>,
+            <span class=SpellE>supplier_person.supplier_last_name</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span><span class=SpellE>supplier_person.supplier_first_name</span>,
+            <span class=SpellE>supplier_person.supplier_middle_name</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+contract INNER JOIN supplier ON <span class=SpellE>contract.supplier_id</span> = <span class=SpellE>supplier.supplier_id</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>LEFT OUTER JOIN <span class=SpellE>supplier_org</span> ON <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>supplier_org.supplier_id</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>LEFT OUTER JOIN <span class=SpellE>supplier_person</span> ON <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>supplier_person.supplier_id</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>contract.contract_number</span>, <span class=SpellE>contract.contract_date</span>,
+            <span class=SpellE>supplier.supplier_id</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>IFNULL(<span class=SpellE>supplier_org.supplier_org_name</span>, CONCAT(
+            <span class=SpellE>supplier_person.supplier_last_name</span>, ' ',
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span><span class=SpellE>supplier_person.supplier_first_name</span>, ' ', <span class=SpellE>supplier_person.supplier_middle_name</span>)) AS `Supplier`
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+contract INNER JOIN supplier ON <span class=SpellE>contract.supplier_id</span> = <span class=SpellE>supplier.supplier_id</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>LEFT OUTER JOIN <span class=SpellE>supplier_org</span> ON <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>supplier_org.supplier_id</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>LEFT OUTER JOIN <span class=SpellE>supplier_person</span> ON <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>supplier_person.supplier_id</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CREATE VIEW
+<span class=SpellE>supplier_info</span> AS
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>supplier.supplier_id</span>, <span class=SpellE>supplier.supplier_address</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>IFNULL(<span class=SpellE>supplier_org.supplier_org_name</span>, CONCAT(
+            <span class=SpellE>supplier_person.supplier_last_name</span>, ' ',
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span><span class=SpellE>supplier_person.supplier_first_name</span>, ' ', <span class=SpellE>supplier_person.supplier_middle_name</span>)) AS `Info`
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+supplier LEFT OUTER JOIN <span class=SpellE>supplier_org</span> ON <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>supplier_org.supplier_id</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>LEFT OUTER JOIN <span class=SpellE>supplier_person</span> ON <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>supplier_person.supplier_id</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:
+107%;font-family:"Arial","sans-serif";mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='mso-bidi-font-size:13.0pt;line-height:107%;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:major-fareast;mso-bidi-font-family:
+"Times New Roman";mso-bidi-theme-font:major-bidi;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+        <h2><a name="_Toc97140146"><span lang=EN-US style='mso-ansi-language:EN-US'>A1.5
+Creation and usage of stored procedures and triggers</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h2>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>-- stored
+procedures<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DELIMITER
+//<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CREATE
+PROCEDURE <span class=SpellE>sp_contract</span>()
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>BEGIN<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SELECT *
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>FROM (contract LEFT JOIN <span class=SpellE>supplier_org</span> ON
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span><span class=SpellE>contract.supplier_id</span> = <span class=SpellE>supplier_org.supplier_id</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span>LEFT JOIN <span class=SpellE>supplier_person</span> ON
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span><span class=SpellE>contract.supplier_id</span> = <span class=SpellE>supplier_person.supplier_id</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>END //<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DELIMITER
+//<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CREATE
+PROCEDURE <span class=SpellE>sp_contract_total</span>(IN <span class=SpellE>date_from</span> timestamp,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:11'>������������������������������������������������������������������������������������������������������� </span><span style='mso-tab-count:1'>��������� </span>IN <span class=SpellE>date_to</span> timestamp)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>BEGIN<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>SELECT <span class=SpellE>contract.contract_number</span>,
+            <span class=SpellE>contract.contract_date</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span>SUM(<span class=SpellE>supplied.supplied_amount</span>), SUM(
+            <span class=SpellE>supplied.supplied_amount</span> * <span class=SpellE>supplied.supplied_cost</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>FROM contract LEFT JOIN supplied ON <span class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>WHERE <span class=SpellE>contract.contract_date</span> BETWEEN <span class=SpellE>date_from</span> AND <span class=SpellE>date_to</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>GROUP BY <span class=SpellE>contract.contract_number</span>,
+            <span class=SpellE>contract.contract_date</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>END //<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CALL <span
+class=SpellE>sp_contract_total</span>('2018-09-01', '2018-10-31');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DELIMITER
+//<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CREATE
+PROCEDURE <span class=SpellE>sp_contract_ops</span>(IN op CHAR(1), IN <span class=SpellE>c_num</span> INT, IN <span class=SpellE>c_date</span> TIMESTAMP,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:11'>������������������������������������������������������������������������������������������������������� </span><span style='mso-tab-count:1'>��������� </span>IN <span class=SpellE>s_id</span> INT, IN <span class=SpellE>c_note</span>            VARCHAR(100))
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>BEGIN<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>IF op = 'i' THEN
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span>INSERT INTO contract(<span class=SpellE>contract_date</span>, <span class=SpellE>supplier_id</span>, <span class=SpellE>contract_note</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:3'>������������������������� </span>VALUES(CURRENT_TIMESTAMP(),
+            <span class=SpellE>s_id</span>, <span class=SpellE>c_note</span>);
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>ELSEIF op = 'u' THEN
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span>UPDATE contract SET <span class=SpellE>contract_date</span> = <span class=SpellE>c_date</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:9'>������������������������������������������������������������������������������������ </span><span class=SpellE>supplier_id</span> = <span class=SpellE>s_id</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:9'>������������������������������������������������������������������������������������ </span><span class=SpellE>contract_note</span> = <span class=SpellE>c_note</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span>WHERE <span class=SpellE>contract_number</span> = <span class=SpellE>c_num</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>ELSE
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span>DELETE FROM contract WHERE <span class=SpellE>contract_number</span> = <span class=SpellE>c_num</span>;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>END IF;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>END //<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CALL <span
+class=SpellE>sp_contract_ops</span>('i', 0, '2018-12-16', 2, 'contract inserted');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CALL <span
+class=SpellE>sp_contract_ops</span>('u', 6, '2018-12-31', 2, 'contract updated');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CALL <span
+class=SpellE>sp_contract_ops</span>('d', 6, '2018-12-31', 0, '');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>-- triggers<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DELIMITER
+//<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CREATE
+TRIGGER <span class=SpellE>not_null_date</span> BEFORE INSERT ON contract
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FOR EACH
+ROW<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>BEGIN<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>IF <span class=SpellE>NEW.contract_date</span> IS NULL THEN
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span>SET <span class=SpellE>NEW.contract_date</span> = CURRENT_TIMESTAMP();
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>END IF;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>END //<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+contract (<span class=SpellE>supplier_id</span>, <span class=SpellE>contract_note</span>) VALUES (1, '');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DELIMITER
+//<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>CREATE
+TRIGGER <span class=SpellE>check_supplier_org</span> BEFORE INSERT ON <span class=SpellE>supplier_person</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FOR EACH
+ROW<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>BEGIN<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>IF <span class=SpellE>NEW.supplier_id</span> IN (SELECT <span class=SpellE>supplier_id</span> FROM <span class=SpellE>supplier_org</span>) THEN
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span>SET @message = CONCAT('The person with id ', <span class=SpellE>NEW.supplier_id</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:3'>������������������������� </span>' is already stored as the organization!');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span>SIGNAL SQLSTATE '45001'
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:2'>��������������� </span>SET MESSAGE_TEXT = @message;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>END IF;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>END //<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+<span class=SpellE>supplier_person</span> VALUES (2, 'Makarov', 'Oleg', '<span class=SpellE>Petrovych</span>');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:
+107%;font-family:"Arial","sans-serif";mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='mso-bidi-font-size:13.0pt;line-height:107%;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:major-fareast;mso-bidi-font-family:
+"Times New Roman";mso-bidi-theme-font:major-bidi;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+        <h2><a name="_Toc97140147"><span lang=EN-US style='mso-ansi-language:EN-US'>A1.6
+Basics of data integrity control mechanisms</span></a><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></h2>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>--
+referential constraints NO ACTION<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+contract<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DROP
+FOREIGN KEY contract_ibfk_1;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+contract<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ADD
+CONSTRAINT contract_ibfk_1 FOREIGN KEY (<span class=SpellE>supplier_id</span>) REFERENCES supplier(<span class=SpellE>supplier_id</span>) ON DELETE NO ACTION ON UPDATE NO ACTION;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+<span class=SpellE>supplier_org</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DROP
+FOREIGN KEY supplier_org_ibfk_1;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+<span class=SpellE>supplier_org</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ADD
+CONSTRAINT supplier_org_ibfk_1 FOREIGN KEY (<span class=SpellE>supplier_id</span>) REFERENCES supplier(<span class=SpellE>supplier_id</span>) ON DELETE NO ACTION ON UPDATE NO ACTION;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+<span class=SpellE>supplier_person</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DROP
+FOREIGN KEY supplier_person_ibfk_1;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+<span class=SpellE>supplier_person</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ADD
+CONSTRAINT supplier_person_ibfk_1 FOREIGN KEY (<span class=SpellE>supplier_id</span>) REFERENCES supplier(<span class=SpellE>supplier_id</span>) ON DELETE NO ACTION ON UPDATE NO ACTION;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DELETE FROM
+supplier WHERE <span class=SpellE>supplier_id</span> = 4;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>UPDATE
+supplier SET <span class=SpellE>supplier_id</span> = 7 WHERE <span class=SpellE>supplier_id</span> = 5;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>--
+referential constraints CASCADE<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+contract<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DROP
+FOREIGN KEY contract_ibfk_1;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+contract<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ADD
+CONSTRAINT contract_ibfk_1 FOREIGN KEY (<span class=SpellE>supplier_id</span>) REFERENCES supplier(<span class=SpellE>supplier_id</span>) ON DELETE CASCADE ON UPDATE CASCADE;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+<span class=SpellE>supplier_org</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DROP
+FOREIGN KEY supplier_org_ibfk_1;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+<span class=SpellE>supplier_org</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ADD
+CONSTRAINT supplier_org_ibfk_1 FOREIGN KEY (<span class=SpellE>supplier_id</span>) REFERENCES supplier(<span class=SpellE>supplier_id</span>) ON DELETE CASCADE ON UPDATE CASCADE;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+<span class=SpellE>supplier_person</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DROP
+FOREIGN KEY supplier_person_ibfk_1;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+<span class=SpellE>supplier_person</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ADD
+CONSTRAINT supplier_person_ibfk_1 FOREIGN KEY (<span class=SpellE>supplier_id</span>) REFERENCES supplier(<span class=SpellE>supplier_id</span>) ON DELETE CASCADE ON UPDATE CASCADE;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>UPDATE
+supplier SET <span class=SpellE>supplier_id</span> = 8 WHERE <span class=SpellE>supplier_id</span> = 2;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DELETE FROM
+supplier WHERE <span class=SpellE>supplier_id</span> = 8;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>--
+referential constraints SET NULL<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+contract<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DROP
+FOREIGN KEY contract_ibfk_1;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+contract<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>MODIFY <span
+class=SpellE>supplier_id</span> INT NULL;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+contract<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ADD
+CONSTRAINT contract_ibfk_1 FOREIGN KEY (<span class=SpellE>supplier_id</span>) REFERENCES supplier(<span class=SpellE>supplier_id</span>) ON DELETE SET NULL ON UPDATE SET NULL;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>UPDATE
+supplier SET <span class=SpellE>supplier_id</span> = 10 WHERE <span class=SpellE>supplier_id</span> = 3;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:
+107%;font-family:"Arial","sans-serif";mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='mso-bidi-font-size:13.0pt;line-height:107%;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:major-fareast;mso-bidi-font-family:
+"Times New Roman";mso-bidi-theme-font:major-bidi;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+        <h2><a name="_Toc97140148"><span lang=EN-US style='mso-ansi-language:EN-US'>A1.7
+Work with transactions</span></a><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></h2>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>--
+transactions<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>supplied.contract_number</span>, <span class=SpellE>supplied.supplied_product</span>,
+            <span class=SpellE>supplied.supplied_cost</span>, <span class=SpellE>supplied.supplied_amount</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span><span class=SpellE>supplier.supplier_address</span>,
+            <span class=SpellE>contract.contract_date</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+supplied, contract, supplier<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE <span
+class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span> AND <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>contract.supplier_id</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>AND <span
+class=SpellE>contract.contract_number</span> = 1;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SET
+AUTOCOMMIT = 0;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>START
+TRANSACTION;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied VALUES (1, 'Vacuum cleaner', 22, 390);<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>supplied.contract_number</span>, <span class=SpellE>supplied.supplied_product</span>,
+            <span class=SpellE>supplied.supplied_cost</span>, <span class=SpellE>supplied.supplied_amount</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span><span class=SpellE>supplier.supplier_address</span>,
+            <span class=SpellE>contract.contract_date</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+supplied, contract, supplier<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE <span
+class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span> AND <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>contract.supplier_id</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>AND <span
+class=SpellE>contract.contract_number</span> = 1;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ROLLBACK;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT <span
+class=SpellE>supplied.contract_number</span>, <span class=SpellE>supplied.supplied_product</span>,
+            <span class=SpellE>supplied.supplied_cost</span>, <span class=SpellE>supplied.supplied_amount</span>,
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span><span class=SpellE>supplier.supplier_address</span>,
+            <span class=SpellE>contract.contract_date</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>FROM
+supplied, contract, supplier<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>WHERE <span
+class=SpellE>contract.contract_number</span> = <span class=SpellE>supplied.contract_number</span> AND <span class=SpellE>supplier.supplier_id</span> = <span class=SpellE>contract.supplier_id</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>AND <span
+class=SpellE>contract.contract_number</span> = 1;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplier;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM contract;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplied;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SET
+AUTOCOMMIT = 0;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>START
+TRANSACTION;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplier (<span class=SpellE>supplier_id</span>, <span class=SpellE>supplier_address</span>,
+            <span class=SpellE>supplier_phone</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>VALUES (6, 'Kyiv, <span class=SpellE>Velyka</span>
+            <span class=SpellE>Vasylkivska</span> st., 55', '');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+contract (<span class=SpellE>contract_date</span>, <span class=SpellE>supplier_id</span>,
+            <span class=SpellE>contract_note</span>)
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>����� </span>VALUES ('2018-12-12', 6, '');
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied VALUES (6, 'Vacuum cleaner', 22, 390);<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>INSERT INTO
+supplied VALUES (6, 'Coffee machine', 33, 90);<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplier;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM contract;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplied;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ROLLBACK;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplier;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM contract;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplied;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+contract<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DROP
+FOREIGN KEY contract_ibfk_1;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+contract<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ADD
+CONSTRAINT contract_ibfk_1 FOREIGN KEY (<span class=SpellE>supplier_id</span>) REFERENCES supplier(<span class=SpellE>supplier_id</span>) ON DELETE CASCADE ON UPDATE CASCADE;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplier;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM contract;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplied;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SET
+AUTOCOMMIT = 0;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>START
+TRANSACTION;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>UPDATE
+supplier SET <span class=SpellE>supplier_id</span> = 22 WHERE <span class=SpellE>supplier_id</span> = 6;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>UPDATE
+supplied SET <span class=SpellE>supplied_cost</span> = <span class=SpellE>supplied_cost</span> * 1.1 WHERE <span class=SpellE>contract_number</span> = 8;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplier;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM contract;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplied WHERE <span class=SpellE>contract_number</span> = 8;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ROLLBACK;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplier;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM contract;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplied WHERE <span class=SpellE>contract_number</span> = 8;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+supplied<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DROP
+FOREIGN KEY supplied_ibfk_1;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ALTER TABLE
+supplied<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ADD
+CONSTRAINT supplied_ibfk_1 FOREIGN KEY (<span class=SpellE>contract_number</span>) REFERENCES contract(<span class=SpellE>contract_number</span>) ON DELETE CASCADE ON UPDATE CASCADE;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplier;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM contract;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplied;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SET
+AUTOCOMMIT = 0;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>START
+TRANSACTION;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DELETE FROM
+supplier WHERE <span class=SpellE>supplier_id</span> = 22;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplier;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM contract;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplied;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ROLLBACK;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplier;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM contract;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplied;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>--
+isolation levels<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>#SET GLOBAL
+TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>#SET GLOBAL
+TRANSACTION ISOLATION LEVEL READ COMMITTED;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>#SET GLOBAL
+TRANSACTION ISOLATION LEVEL REPEATABLE READ;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SET GLOBAL
+TRANSACTION ISOLATION LEVEL SERIALIZABLE;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SET
+AUTOCOMMIT = 0;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>START
+TRANSACTION;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>#INSERT
+INTO supplier VALUES (23, 'Kharkiv, Kyrpychova st., 2', '');<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>#UPDATE
+supplier SET <span class=SpellE>supplier_phone</span> = '223-322' WHERE <span class=SpellE>supplier_id</span> = 22;
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplier;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>DO
+SLEEP(10);<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>SELECT *
+FROM supplier;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>ROLLBACK;<o:p></o:p></span></p>
+
+        <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:
+107%;font-family:"Arial","sans-serif";mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='mso-bidi-font-size:13.0pt;line-height:107%;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:major-fareast;mso-bidi-font-family:
+"Times New Roman";mso-bidi-theme-font:major-bidi;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+        <h2><a name="_Toc97140149"><span lang=EN-US style='mso-ansi-language:EN-US'>A1.8
+User rights management</span></a><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></h2>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>-- users<o:p></o:p></span></p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>CREATE USER 'admin'@'<span class=SpellE>localhost</span>' IDENTIFIED BY 'admin123';
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>CREATE USER 'manager'@'<span class=SpellE>localhost</span>' IDENTIFIED BY 'manager123';
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>CREATE USER 'storekeeper'@'<span class=SpellE>localhost</span>' IDENTIFIED BY 'storekeeper123';
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>SELECT Host, User, Password FROM mysql.user;<o:p></o:p></span></p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>GRANT ALL ON supply.* TO 'admin'@'<span class=SpellE>localhost</span>';
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>GRANT SELECT, INSERT, UPDATE, DELETE ON <span class=SpellE>supply.supplier</span> TO 'manager'@'<span class=SpellE>localhost</span>';
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>GRANT SELECT, INSERT, UPDATE, DELETE ON <span class=SpellE>supply.supplier_org</span> TO 'manager'@'<span class=SpellE>localhost</span>';
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>GRANT SELECT, INSERT, UPDATE, DELETE ON <span class=SpellE>supply.supplier_person</span> TO 'manager'@'<span class=SpellE>localhost</span>';
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>GRANT SELECT, INSERT, UPDATE, DELETE ON <span class=SpellE>supply.contract</span> TO 'manager'@'<span class=SpellE>localhost</span>';
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>GRANT SELECT ON <span class=SpellE>supply.supplied</span> TO 'manager'@'<span class=SpellE>localhost</span>';
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>GRANT EXECUTE ON supply.* TO 'manager'@'<span class=SpellE>localhost</span>';
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>GRANT SELECT, INSERT, UPDATE, DELETE ON <span class=SpellE>supply.supplied</span> TO 'storekeeper'@'<span class=SpellE>localhost</span>';
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>GRANT SELECT ON <span class=SpellE>supply.contract</span> TO 'storekeeper'@'
+            <span class=SpellE>localhost</span>';
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>GRANT EXECUTE ON supply.* TO 'storekeeper'@'<span class=SpellE>localhost</span>';
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>SELECT * FROM mysql.db<o:p></o:p></span></p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>WHERE Db = 'supply';<o:p></o:p></span></p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>SELECT Db, User, Table_name, <span class=SpellE>Table_priv</span> FROM <span class=SpellE>mysql.tables_priv</span>
+            <o:p></o:p>
+            </span>
+        </p>
+
+        <p class=MsoNormal align=left style='margin-bottom:8.0pt;text-align:left;
+text-indent:0cm;line-height:107%'><span lang=EN-US style='mso-ansi-language:
+EN-US'>WHERE Db = 'supply';<o:p></o:p></span></p>
+
+        <p class=MsoNormal style='text-indent:0cm'>
+            <o:p>&nbsp;</o:p>
+        </p>
+
+    </div>
+
+</body>
+
+</html>
