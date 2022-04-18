@@ -2,235 +2,214 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="icon" type="image/png" href="img/logo.png" />
 
-    <!-- Primary Meta Tags -->
-    <title>dbstpoint — Data Models and Databases Workout | A Practical Tutorial</title>
-    <meta name="title" content="dbstpoint — Data Models and Databases Workout | A Practical Tutorial">
-    <meta name="description" content="Databases and Data Models Practical Tutorial and References including MySQL step-by-step examples, typical questions and answers, PHP Web Development guidelines">
+    <title>Learning Materials for Students by Andrii Kopp</title>
+    <meta name="title" content="Learning Materials for Students by Andrii Kopp">
+    <meta name="description" content="Learning materials by Associate Professor Andrii Kopp, Ph.D. for students of National Technical University Kharkiv Polytechnic Institute.">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="dbstpoint — Data Models and Databases Workout | A Practical Tutorial">
-    <meta property="og:description" content="Databases and Data Models Practical Tutorial and References including MySQL step-by-step examples, typical questions and answers, PHP Web Development guidelines">
+    <meta property="og:title" content="Learning Materials for Students by Andrii Kopp">
+    <meta property="og:description" content="Learning materials by Associate Professor Andrii Kopp, Ph.D. for students of National Technical University Kharkiv Polytechnic Institute.">
 
-    <!-- Twitter -->
-    <meta property="twitter:title" content="dbstpoint — Data Models and Databases Workout | A Practical Tutorial">
-    <meta property="twitter:description" content="Databases and Data Models Practical Tutorial and References including MySQL step-by-step examples, typical questions and answers, PHP Web Development guidelines">
+    <meta property="twitter:title" content="Learning Materials for Students by Andrii Kopp">
+    <meta property="twitter:description" content="Learning materials by Associate Professor Andrii Kopp, Ph.D. for students of National Technical University Kharkiv Polytechnic Institute.">
+
+    <style>
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: #f8f9fa;
+            /* Set a background color */
+            color: #212529;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+        
+        #myBtn:hover {
+            background-color: #ebecec;
+            /* Add a dark-grey background on hover */
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <span class="navbar-brand mb-0 h1">
-            🗃️ dbstpoint
+            🗃️ Learning Materials for Students
         </span>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#db1">Data Models and Structures (Part 1)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#db2">Design and Development of Databases (Part 2)</a>
+                </li>
+
+                <li class="nav-item">
+                    <div id="google_translate_element"></div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({
+                                pageLanguage: 'en'
+                            }, 'google_translate_element');
+                        }
+                    </script>
+                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="container-fluid">
-        <h1>Data Models and Databases Workout | A Practical Tutorial</h1>
-        <h2>💻 Databases and Data Models Practical Tutorial and References including MySQL step-by-step examples, typical questions and answers, PHP Web Development guidelines</h2>
-        <p>🧑‍🎓 This resource covers the questions related to modern database design and development using the MySQL database management system (DBMS). It also covers simple web application development using MySQL interaction with the HTML markup and PHP
-            programming languages. The resource could be useful for Software Engineering, Computer Science or other Information Technology students.
+        <h2>💻 Learning materials by Associate Professor Andrii Kopp, Ph.D. for students of National Technical University "Kharkiv Polytechnic Institute"</h2>
+        <p>🧑‍🎓 This website is for students who are studying at the Department of Software Engineering and Management Intelligent Technologies in National Technical University "Kharkiv Polytechnic Institute" with the Associate Professor Andrii Kopp, Ph.D.
         </p>
+
+        <ul>
+            <li><a href="#db1">Data Models and Structures (Part 1)</a> for 2nd year students in 3rd semester</li>
+            <li><a href="#db2">Design and Development of Databases (Part 2)</a> for 2nd year students in 4th semester</li>
+        </ul>
     </div>
 
-    <hr>
+    <div class="container">
+        <span id="db1"></span>
+        <br>
+        <br>
+        <br>
+        <h3>Data Models and Structures (Part 1)</h3>
+        <h4>Evaluation</h4>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Activity</th>
+                    <th scope="col">Credit Points (per unit)</th>
+                    <th scope="col">Credit Points (total)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Classes</th>
+                    <td>5</td>
+                    <td>5 &times; 16 = 80 &times; 0.75 = 60</td>
+                </tr>
+                <tr>
+                    <th scope="row">Laboratory Workshop</th>
+                    <td>10</td>
+                    <td>10 &times; 4 = 40</td>
+                </tr>
+                <tr>
+                    <th scope="row" colspan="2">Total</th>
+                    <td>100</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <div class="container-fluid">
-        <h3>Essentials of Database Design</h3>
+        <h4>Laboratory Workshop</h4>
+        <p>Use the guidelines (available by links next to each laboratory work) to prepare written reports (<a href="doc/reportukr.docx" target="_blank">UKR</a> | <a href="doc/reporteng.docx" target="_blank">ENG</a>) for the following laboratory works given
+            below. Send files of your reports to the Teacher to get credit points.</p>
+        <div id="db1-labs"></div>
 
-        <div class="card-columns">
-            <div class="card">
-                <img src="images/1.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/introduction.pdf');">📌 Introduction</a></h5>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/2.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/business-modeling.pdf');">📌 Business and Data Modeling</a></h5>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/3.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/data-modeling.pdf');">📌 Database Modeling</a></h5>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/4.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/rdbms-fundamentals.pdf');">📌 Relational Databases Fundamentals</a></h5>
-                </div>
-            </div>
-        </div>
+        <h4>Classes</h4>
+        <div class="row row-cols-1 row-cols-md-1" id="db1-cards"></div>
+
+        <hr>
+
+        <span id="db2"></span>
+        <br>
+        <br>
+        <br>
+        <h3>Design and Development of Databases (Part 2)</h3>
+        <h4>Evaluation</h4>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Activity</th>
+                    <th scope="col">Credit Points (per unit)</th>
+                    <th scope="col">Credit Points (total)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Classes</th>
+                    <td>5</td>
+                    <td>5 &times; 16 = 80 &times; 0.75 = 60 &times; 0.5 = 30</td>
+                </tr>
+                <tr>
+                    <th scope="row">Laboratory Workshop</th>
+                    <td>5</td>
+                    <td>5 &times; 8 = 40 &times; 0.5 = 20</td>
+                </tr>
+                <tr>
+                    <th scope="row">Course Project</th>
+                    <td>100</td>
+                    <td>100 &times; 0.5 = 50</td>
+                </tr>
+                <tr>
+                    <th scope="row" colspan="2">Total</th>
+                    <td>100</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>Laboratory Workshop</h4>
+        <p>Use the guidelines (available by links next to each laboratory work) to prepare written reports (<a href="doc/reportukr.docx" target="_blank">UKR</a> | <a href="doc/reporteng.docx" target="_blank">ENG</a>) for the following laboratory works given
+            below. Send files of your reports to the Teacher to get credit points.</p>
+        <div id="db2-labs"></div>
+
+        <h4>Course Project</h4>
+        <p>Use the guidelines (available by links next to each item) to prepare a written report for the course project. Send the course project report and the presentation (created using Microsoft PowrPoint or other presentations tool) to the Teacher by
+            the end of semester. Await for the course project defense appointment.
+        </p>
+        <ul>
+            <li>Select the topic of your course project from the list (<a href="doc/db2topicsukr.docx" target="_blank">UKR</a> | <a href="doc/db2topicseng.docx" target="_blank">ENG</a>) and inform the Teacher.</li>
+            <li>Complete the steps given in the course project template (<a href="doc/db2projukr.docx" target="_blank">UKR</a> | <a href="doc/db2projeng.docx" target="_blank">ENG</a>) including at least the paragraph 2.1.</li>
+            <li>Use the guidelines (given below next to each item) to develop the database application as part of your course project (<i>OPTIONAL</i>):
+                <ul>
+                    <li>No-code (Low-code) development using the Oracle APEX platform (<a href="textbook/db2apexukr.pdf" target="_blank">UKR</a> | <a href="textbook/db2apexeng.pdf" target="_blank">ENG</a>)</li>
+                    <li>Full-stack development using MySQL, PHP (or Java, Python, .NET, NodeJS, etc.), and HTML/CSS/JavaScript (<a href="textbook/db2phpukr.pdf" target="_blank">UKR</a> | <a href="textbook/db2phpeng.pdf" target="_blank">ENG</a>)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Classes</h4>
+        <div class="row row-cols-1 row-cols-md-1" id="db2-cards"></div>
     </div>
 
-    <hr>
-
-    <div class="container-fluid">
-        <h3>MySQL Fundamentals</h3>
-
-        <div class="card-columns">
-            <div class="card">
-                <img src="images/5.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/mysql-ddl.pdf');">📌 MySQL Database Creation</a></h5>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/6.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/mysql-dml.pdf');">📌 MySQL Data Manipulation</a></h5>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/7.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/mysql-select.pdf');">📌 MySQL Data Querying</a></h5>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="container-fluid">
-        <h3>MySQL Business Logic Development</h3>
-
-        <div class="card-columns">
-            <div class="card">
-                <img src="images/8.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/views.pdf');">📌 Database Views</a></h5>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/9.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/procedures-triggers.pdf');">📌 Stored Procedures and Triggers</a></h5>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/10.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/mysql-data-integrity.pdf');">📌 MySQL Data Integrity Control</a></h5>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="container-fluid">
-        <h3>Advanced MySQL and PHP Web Development</h3>
-
-        <div class="card-columns">
-            <div class="card">
-                <img src="images/11.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/transactions.pdf');">📌 Transactions</a></h5>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/12.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/mysql-users.pdf');">📌 MySQL Users</a></h5>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/13.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/php-mysql-webapp.pdf');">📌 PHP and MySQL Web Application Development</a></h5>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="container-fluid">
-        <h3>Q&A and Resources</h3>
-
-        <div class="card-columns">
-            <div class="card">
-                <img src="images/14.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/mysql-questions.pdf');">📌 Questions and Answers</a></h5>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/15.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/reading.pdf');">📌 Recommended Reading</a></h5>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="container-fluid">
-        <h3>Additional Materials</h3>
-
-        <div class="card-columns">
-            <div class="card">
-                <img src="images/16.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/sql-source-code.pdf');">📌 SQL Tasks Source Code</a></h5>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/17.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/php-source-code.pdf');">📌 PHP Tasks Source Code</a></h5>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/18.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/problems.pdf');">📌 Database Development Problems</a></h5>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/19.jpg" class="card-img-top" alt="img" style="width: 144px;">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="nav-item nav-link" href="javascript:load('documents/mysql-training.pdf');">📌 MySQL Training Tasks</a></h5>
-                </div>
-            </div>
-        </div>
-    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Menu</button>
 
     <div class="jumbotron jumbotron-fluid mb-0">
         <div class="container">
-            <h1 class="display-4">🗃️ dbstpoint</h1>
             <p class="lead">&copy;
                 <script>
                     document.write(new Date().getFullYear())
-                </script>
-                Worldwide 🌎 <a href="mailto:7960954@gmail.com">7960954@gmail.com</a>
+                </script> Andrii Kopp 🌐 <a href="https://andriikopp.github.io/" target="_blank">andriikopp.github.io</a>
             </p>
-        </div>
-    </div>
-
-    <div class="modal fade" id="pageModal" tabindex="-1" role="dialog" aria-labelledby="pageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="pageModalLabel">Tutorial</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body" id="pageModalBody">
-                </div>
-            </div>
         </div>
     </div>
 
@@ -239,9 +218,283 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <script>
-        function load(page) {
-            $('#pageModal').modal('show');
-            $('#pageModalBody').html(`<iframe src="${page}" style="width: 100%; height: 480px;"></iframe>`);
+        $(document).ready(function() {
+            const DB1_YT_UA = ['https://youtu.be/Lfq0SD7xRfg', 'https://youtu.be/i07UKWBEFKA', 'https://youtu.be/HGxsKQrMBJ4', 'https://youtu.be/BCyoCoLuYlI', 'https://youtu.be/l_xQLu-Qzi4', 'https://youtu.be/rfQH4ExKsAw', 'https://youtu.be/TpQTlWdMqCM', 'https://youtu.be/ySuJe4M2GfY', 'https://youtu.be/yBhd70b8Qg0', 'https://youtu.be/RtQ_romS1S0', 'https://youtu.be/sgGdFmtiLxk', 'https://youtu.be/p825OlVXodo', 'https://youtu.be/wVDuc4UPnYU', 'https://youtu.be/73rxww1W_KA', 'https://youtu.be/LKULMhyOaZQ', 'https://youtu.be/lQRH6ocBbCo'];
+
+            const DB1_YT_EN = ['https://youtu.be/Lfq0SD7xRfg?t=272', 'https://youtu.be/i07UKWBEFKA?t=287', 'https://youtu.be/HGxsKQrMBJ4?t=207', 'https://youtu.be/BCyoCoLuYlI?t=325', 'https://youtu.be/l_xQLu-Qzi4?t=226', 'https://youtu.be/rfQH4ExKsAw?t=237', 'https://youtu.be/TpQTlWdMqCM?t=258', 'https://youtu.be/ySuJe4M2GfY?t=264', 'https://youtu.be/yBhd70b8Qg0?t=410', 'https://youtu.be/RtQ_romS1S0?t=210', 'https://youtu.be/sgGdFmtiLxk?t=293', 'https://youtu.be/p825OlVXodo?t=162', 'https://youtu.be/wVDuc4UPnYU?t=134', 'https://youtu.be/73rxww1W_KA?t=155', 'https://youtu.be/LKULMhyOaZQ?t=150', 'https://youtu.be/lQRH6ocBbCo?t=129'];
+
+            const DB2_YT_UA = ['https://youtu.be/FnSb5Mle0ss', 'https://youtu.be/49dQGva5W5M', 'https://youtu.be/WZo5uTcdZDw', 'https://youtu.be/rpFZhPxEcVE', 'https://youtu.be/-crDnmk4dig', 'https://youtu.be/uWRSAjBTFIs', 'https://youtu.be/ysMSuYyFhG8', 'https://youtu.be/HJ5Vr8qoP7Y', 'https://youtu.be/XdoOSpL87Ms', 'https://youtu.be/_FcU6LjE4oQ', 'https://youtu.be/ccz8prk663k', 'https://youtu.be/z6RLiTUadoI', 'https://youtu.be/ADhQiszdk2U', 'https://youtu.be/N6Nx220wzNE', 'https://youtu.be/RpOdONQ1-wE', 'https://youtu.be/sY229GtPm8w'];
+
+            const DB2_YT_EN = ['https://youtu.be/FnSb5Mle0ss?t=221', 'https://youtu.be/49dQGva5W5M?t=228', 'https://youtu.be/WZo5uTcdZDw?t=357', 'https://youtu.be/rpFZhPxEcVE?t=334', 'https://youtu.be/-crDnmk4dig?t=264', 'https://youtu.be/uWRSAjBTFIs?t=224', 'https://youtu.be/ysMSuYyFhG8?t=276', 'https://youtu.be/HJ5Vr8qoP7Y?t=305', 'https://youtu.be/XdoOSpL87Ms?t=365', 'https://youtu.be/_FcU6LjE4oQ?t=168', 'https://youtu.be/ccz8prk663k?t=99', 'https://youtu.be/z6RLiTUadoI?t=266', 'https://youtu.be/ADhQiszdk2U?t=161', 'https://youtu.be/N6Nx220wzNE?t=315', 'https://youtu.be/RpOdONQ1-wE?t=407', 'https://youtu.be/sY229GtPm8w?t=236'];
+
+            const DB1_TOPICS = [
+                ['Lesson 1',
+                    'Main requirements to DBMS.',
+                    'Main components of ANSI/SPARC model.',
+                ],
+                ['Lesson 2',
+                    'Main features of query languages in modern DBMS.',
+                    'Data independence.',
+                ],
+                ['Lesson 3',
+                    'Advantages of data independence.',
+                    'Integrity constraints and data consistency in DBMS.',
+                ],
+                ['Lesson 4',
+                    'Security and access control in modern DBMS.',
+                    'Main performance metrics.',
+                ],
+                ['Lesson 5',
+                    'Client-server architecture.',
+                    'Object-relational mismatch.',
+                ],
+                ['Lesson 6',
+                    'Main differences between OLTP and OLAP systems.',
+                    'Evaluation criteria of parallel systems.',
+                ],
+                ['Lesson 7',
+                    'Characteristics of NoSQL systems.',
+                    'DBMS selection factors for information systems development.',
+                ],
+                ['Lesson 8',
+                    'Data models and their main features.',
+                    'Basic concepts of relational data model.',
+                ],
+                ['Lesson 9',
+                    'Relational algebra.',
+                    'Relational calculus.',
+                ],
+                ['Lesson 10',
+                    'Functional dependencies and keys.',
+                    'Normalization and normal forms.',
+                    'Practical aspects of application of relational data model.',
+                ],
+                ['Lesson 11',
+                    'The entity-relationship model.',
+                    'Object and other data models.',
+                    'Designing a database schema in an entity-relationship model.',
+                ],
+                ['Lesson 12',
+                    'SELECT, SELECT DISTINCT, SELECT TOP queries.',
+                    'WHERE statement and logical operators AND, OR, NOT.',
+                    'ORDER BY statement.',
+                ],
+                ['Lesson 13',
+                    'INSERT INTO query.',
+                    'UPDATE query.',
+                    'DELETE query.',
+                ],
+                ['Lesson 14',
+                    'Aggregation functions MIN, MAX, COUNT, AVG, SUM.',
+                    'Operators LIKE, IN, BETWEEN, AS.',
+                ],
+                ['Lesson 15',
+                    'JOIN and UNION statements.',
+                    'GROUP BY and HAVING statements.',
+                ],
+                ['Lesson 16',
+                    'Operators EXISTS, ANY, ALL.',
+                    'CASE operator.',
+                    'NULL values and functions to work with them.'
+                ]
+            ];
+
+            const DB2_TOPICS = [
+                ['Lesson 1',
+                    'File-Server',
+                    'Traditional Two-Tier Client-Server',
+                    'Three-Tier Client-Server',
+                    'n-Tier Client-Server',
+                    'Middleware',
+                ],
+                ['Lesson 2',
+                    'Transaction Processing Monitors',
+                    'Web Services and Service-Oriented Architectures',
+                    'Service-Oriented Architectures (SOA)',
+                    'Distributed DBMSs',
+                    'Data Warehousing',
+                ],
+                ['Lesson 3',
+                    'Cloud Computing',
+                    'Cloud-based database solutions',
+                    'Components of a DBMS',
+                    'Components of Database Manager (DM)',
+                ],
+                ['Lesson 4',
+                    'Data Flow Diagrams (DFD). Types and elements.',
+                    'Data Flow Diagrams (DFD). Design rules.',
+                    'Business rules. Types.',
+                    'Business rules. Best practices.',
+                    'Translating Business Rules into Data Model Components.',
+                ],
+                ['Lesson 5',
+                    'Standard Database Concepts.',
+                    'Entity Relationship Model. Attributes.',
+                    'Entity Relationship Model. Relationships.',
+                    'Entity Relationship Model. Associative Entities.',
+                    'Developing an ER Diagram.',
+                ],
+                ['Lesson 6',
+                    'SQL CREATE DATABASE statement',
+                    'SQL DROP DATABASE statement',
+                    'SQL CREATE TABLE statement',
+                    'SQL DROP TABLE statement',
+                    'SQL ALTER TABLE statement',
+                ],
+                ['Lesson 7',
+                    'SQL NOT NULL statement',
+                    'SQL UNIQUE statement',
+                    'SQL PRIMARY KEY statement',
+                    'SQL FOREIGN KEY statement',
+                    'SQL CHECK statement',
+                    'SQL DEFAULT statement',
+                    'SQL INDEX statement',
+                    'SQL AUTO INCREMENT statement',
+                ],
+                ['Lesson 8',
+                    'CREATE VIEW statement',
+                    'DROP VIEW statement',
+                    'RENAME TABLE statement',
+                    'SHOW CREATE VIEW statement',
+                ],
+                ['Lesson 9',
+                    'CREATE FUNCTION statement',
+                    'DELIMITER statement',
+                    'DROP FUNCTION statement',
+                    'SHOW FUNCTION STATUS statement',
+                ],
+                ['Lesson 10',
+                    'CREATE PROCEDURE statement',
+                    'CALL statement',
+                    'DROP PROCEDURE statement',
+                    'IN, OUT, INOUT statement',
+                    'DECLARE, SET statement',
+                    'SHOW PROCEDURE STATUS statement',
+                ],
+                ['Lesson 11',
+                    'CREATE TRIGGER statement',
+                    'OLD, NEW statement',
+                    'SHOW TRIGGERS statement',
+                    'DROP TRIGGER statement',
+                ],
+                ['Lesson 12',
+                    'CASCADE, SET NULL, NO ACTION, RESTRICT, SET DEFAULT.',
+                    'MySQL START TRANSACTION, COMMIT, ROLLBACK.',
+                    'ACID.',
+                    'Dirty Read. Non Repeatable Read. Phantom Read.',
+                    'Isolation levels.',
+                    'SAVEPOINT. ROLLBACK TO SAVEPOINT.',
+                ],
+                ['Lesson 13',
+                    'MySQL CREATE USER.',
+                    'MySQL GRANT.',
+                    'MySQL REVOKE.',
+                    'MySQL SHOW GRANTS.',
+                    'MySQL DROP USER.',
+                    'Change user password.',
+                    'User information.',
+                    'MySQL RENAME USER.',
+                    'MySQL ACCOUNT LOCK. ACCOUNT UNLOCK.',
+                ],
+                ['Lesson 14',
+                    'HTTP GET and POST methods',
+                    'PHP function mysqli_connect()',
+                    'PHP functions mysqli_select_db() and mysql_query()',
+                    'PHP function mysql_fetch_array()',
+                    'PHP Data Objects (PDO)',
+                ],
+                ['Lesson 15',
+                    'Basic JDBC API classes and interfaces',
+                    'Transaction management by means of JDBC',
+                    'PreparedStatement and CallableStatement objects',
+                    'Servlets in Java',
+                ],
+                ['Lesson 16',
+                    'Pymysql connect() and cursor() functions',
+                    'Pymysql execute() and fetchall() functions',
+                    'Transaction management using pymysql'
+                ]
+            ];
+
+            const DB1_LABS = [
+                'Development of “entity-relationship” and IDEF1X data models.',
+                'Creating a database based on the IDEF1X model.',
+                'Learning the basics of working with Microsoft Access DBMS.',
+                'Learning the basic commands for manipulating data using SQL language.'
+            ];
+
+            const DB2_LABS = [
+                'Creating a database using SQL language (on the example of MySQL).',
+                'Data manipulation with SQL language tools: adding, updating and deleting data (on the example of MySQL).',
+                'Data manipulation with SQL language tools: SELECT queries and their main features (on the example of MySQL).',
+                'Creating and using views (on the example of MySQL).',
+                'Creating and using stored procedures and triggers (on the example of MySQL).',
+                'Basics of using data integrity controls (on the example of MySQL).',
+                'Working with transactions (on the example of MySQL).',
+                'User rights management (on the example of MySQL).'
+            ];
+
+            const displayContent = function(tag, ytUA, ytEN, topics, labs) {
+                for (let i = 1; i <= labs.length; i++) {
+                    $('#' + tag + '-labs').append(`<p>${i}. ${labs[i - 1]} (<a href="textbook/${tag}/${tag}lab${i}ukr.pdf" target="_blank">UKR</a> | <a href="textbook/${tag}/${tag}lab${i}eng.pdf" target="_blank">ENG</a>)</p>`);
+                }
+
+                for (let i = 1; i <= topics.length; i++) {
+                    let topicsList = '<ul>';
+
+                    for (let j = 1; j < topics[i - 1].length; j++) {
+                        topicsList += `<li>${topics[i - 1][j]}</li>`;
+                    }
+
+                    topicsList += '</ul>';
+
+                    $('#' + tag + '-cards').append(`<div class="col mb-4">
+                        <div class="card">
+                            <a href="img/${tag}/${i}.png" target="_blank">
+                                <img src="img/${tag}/${i}.png" class="card-img-top" alt="${tag}-${i}">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Lesson ${i}</h5>
+                                <p class="card-text"><a href="${ytUA[i - 1]}" target="_blank">🎥 Video (UKR)</a></p>
+                                <p class="card-text"><a href="${ytEN[i - 1]}" target="_blank">🎥 Video (ENG)</a></p>
+
+                                <p class="card-text">1. Use the <a href="textbook/${tag}.pdf" target="_blank">textbook</a> to prepare written answers to the following questions given below.</p>
+
+                                <h6>Questions for the ${topics[i - 1][0]}</h6>
+                                ${topicsList}
+
+                                <p class="card-text">2. Send a file with your answers to the Teacher to get credit points.</p>
+                            </div>
+                        </div>`);
+                }
+            };
+
+            displayContent('db1', DB1_YT_UA, DB1_YT_EN, DB1_TOPICS, DB1_LABS);
+            displayContent('db2', DB2_YT_UA, DB2_YT_EN, DB2_TOPICS, DB2_LABS);
+        });
+
+        // Scroll up button
+        { // Get the button:
+            mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
         }
     </script>
 </body>
