@@ -1,6 +1,6 @@
 # dbstpoint.github.io
-## 🗃️ dbstpoint — Data Models and Databases Workout | A Practical Tutorial
+## 🗃️ Learning Materials for Students
 
-### 💻 Databases and Data Models Practical Tutorial and References including MySQL step-by-step examples, typical questions and answers, PHP Web Development guidelines
+### 💻 Learning materials by Associate Professor Andrii Kopp, Ph.D. for students of National Technical University "Kharkiv Polytechnic Institute"
 
-🧑‍🎓 This resource covers the questions related to modern database design and development using the MySQL database management system (DBMS). It also covers simple web application development using MySQL interaction with the HTML markup and PHP programming languages. The resource could be useful for Software Engineering, Computer Science or other Information Technology students.
+🧑‍🎓 This website is for students who are studying at the Department of Software Engineering and Management Intelligent Technologies in National Technical University "Kharkiv Polytechnic Institute" with the Associate Professor Andrii Kopp, Ph.D.
