@@ -190,7 +190,7 @@
         </p>
         <ul>
             <li>Select the topic of your course project from the list (<a href="doc/db2topicsukr.docx" target="_blank">UKR</a> | <a href="doc/db2topicseng.docx" target="_blank">ENG</a>) and inform the Teacher.</li>
-            <li>Complete the steps given in the course project template (<a href="doc/db2projukr.docx" target="_blank">UKR</a> | <a href="doc/db2projeng.docx" target="_blank">ENG</a>) including at least the paragraph 2.1. <small style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten project (until and including the paragraph 2.1 only) and send its photo(s) if you do not have a computer.</small></li>
+            <li>Complete the steps given in the course project template (<a href="doc/db2projukr.docx" target="_blank">UKR</a> | <a href="doc/db2projeng.docx" target="_blank">ENG</a>) including at least the paragraph 2.1. <small style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten project (until and including the paragraph 2.1 only) and send photos if you do not have a computer.</small></li>
             <li>Use the guidelines (given below next to each item) to develop the database application as part of your course project (<i>OPTIONAL</i>):
                 <ul>
                     <li>Full-stack development using MySQL, PHP (or Java, Python, .NET, NodeJS, etc.), and HTML/CSS/JavaScript (<a href="textbook/db2phpukr.pdf" target="_blank">UKR</a> | <a href="textbook/db2phpeng.pdf" target="_blank">ENG</a>)</li>
@@ -438,7 +438,7 @@
 
             const displayContent = function(tag, ytUA, ytEN, topics, labs) {
                 for (let i = 1; i <= labs.length; i++) {
-                    $('#' + tag + '-labs').append(`<p>${i}. ${labs[i - 1]} (<a href="textbook/${tag}/${tag}lab${i}ukr.pdf" target="_blank">UKR</a> | <a href="textbook/${tag}/${tag}lab${i}eng.pdf" target="_blank">ENG</a>) <small style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten answer to these questions (<a href="textbook/${tag}/task/${tag}task${i}ukr.pdf" target="_blank">UKR</a> | <a href="textbook/${tag}/task/${tag}task${i}eng.pdf" target="_blank">ENG</a>) and send its photo(s) if you do not have a computer.</small></p>`);
+                    $('#' + tag + '-labs').append(`<p>${i}. ${labs[i - 1]} (<a href="textbook/${tag}/${tag}lab${i}ukr.pdf" target="_blank">UKR</a> | <a href="textbook/${tag}/${tag}lab${i}eng.pdf" target="_blank">ENG</a>) <small style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten answer to these questions (<a href="textbook/${tag}/task/${tag}task${i}ukr.pdf" target="_blank">UKR</a> | <a href="textbook/${tag}/task/${tag}task${i}eng.pdf" target="_blank">ENG</a>) and send photos if you do not have a computer.</small></p>`);
                 }
 
                 for (let i = 1; i <= topics.length; i++) {
@@ -465,7 +465,7 @@
                                 <h6>Questions for the ${topics[i - 1][0]}</h6>
                                 ${topicsList}
 
-                                <p class="card-text">2. Send a file with your answers to the Teacher to get credit points. <small style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten answer and send its photo(s) if you do not have a computer.</small></p>
+                                <p class="card-text">2. Send a file with your answers to the Teacher to get credit points. <small style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten answer to these questions and send photos if you do not have a computer.</small></p>
                             </div>
                         </div>`);
                 }
