@@ -438,7 +438,7 @@
 
             const displayContent = function(tag, ytUA, ytEN, topics, labs) {
                 for (let i = 1; i <= labs.length; i++) {
-                    $('#' + tag + '-labs').append(`<p>${i}. ${labs[i - 1]} (<a href="textbook/${tag}/${tag}lab${i}ukr.pdf" target="_blank">UKR</a> | <a href="textbook/${tag}/${tag}lab${i}eng.pdf" target="_blank">ENG</a>) <small style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten answer to these questions (<a href="textbook/${tag}/task/${tag}task${i}ukr.pdf" target="_blank">UKR</a> | <a href="textbook/${tag}/task/${tag}task${i}eng.pdf" target="_blank">ENG</a>) and send photos if you do not have a computer.</small></p>`);
+                    $('#' + tag + '-labs').append(`<p>${i}. ${labs[i - 1]} (<a href="textbook/${tag}/${tag}lab${i}ukr.pdf" target="_blank">UKR</a> | <a href="textbook/${tag}/${tag}lab${i}eng.pdf" target="_blank">ENG</a>) <small style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten answer to <a href="textbook/${tag}/task/${tag}task${i}.pdf" target="_blank">these questions</a> and send photos if you do not have a computer.</small></p>`);
                 }
 
                 for (let i = 1; i <= topics.length; i++) {
