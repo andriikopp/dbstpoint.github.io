@@ -547,7 +547,9 @@
                 '<small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Introduction to SQLite.',
                 '<small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Defining a data structure in SQLite.',
 
-                '<strong class="lab_track">MongoDB</strong>'
+                '<strong class="lab_track">MongoDB</strong>',
+                '<small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Introduction to MongoDB.',
+                '<small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Working with MongoDB.'
             ];
 
             const displayContent = function(tag, ytUA, ytEN, topics, labs) {
@@ -557,7 +559,7 @@
                     if (labs[i - 1].includes('lab_track')) {
                         $('#' + tag + '-labs').append(`<p>${labs[i - 1]}</p>`);
                     } else {
-                        $('#' + tag + '-labs').append(`<p>${labNumber}. ${labs[i - 1]} (<a href="textbook/${tag}/${tag}lab${i}ukr.pdf" target="_blank">UKR</a> | <a href="textbook/${tag}/${tag}lab${i}eng.pdf" target="_blank">ENG</a>) <small style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten answer to <a href="textbook/${tag}/task/${tag}task${i}.pdf" target="_blank">these questions</a> and send photos if you do not have a computer.</small></p>`);
+                        $('#' + tag + '-labs').append(`<p>${labNumber}. ${labs[i - 1]} (<a href="textbook/${tag}/${tag}lab${labNumber}ukr.pdf" target="_blank">UKR</a> | <a href="textbook/${tag}/${tag}lab${labNumber}eng.pdf" target="_blank">ENG</a>) <small style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten answer to <a href="textbook/${tag}/task/${tag}task${labNumber}.pdf" target="_blank">these questions</a> and send photos if you do not have a computer.</small></p>`);
 
                         labNumber++;
                     }
