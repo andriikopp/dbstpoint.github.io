@@ -560,7 +560,9 @@
                     if (labs[i - 1].includes('lab_track')) {
                         $('#' + tag + '-labs').append(`<p>${labs[i - 1]}</p>`);
                     } else {
-                        $('#' + tag + '-labs').append(`<p>${labNumber}. ${labs[i - 1]} (<a href="textbook/${tag}/${tag}lab${labNumber}ukr.pdf" target="_blank">UKR</a> | <a href="textbook/${tag}/${tag}lab${labNumber}eng.pdf" target="_blank">ENG</a>) <small style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten answer to <a href="textbook/${tag}/task/${tag}task${labNumber}.pdf" target="_blank">these questions</a> and send photos if you do not have a computer.</small></p>`);
+                        let manualTask = `<small style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten answer to <a href="textbook/${tag}/task/${tag}task${labNumber}.pdf" target="_blank">these questions</a> and send photos if you do not have a computer.</small>`;
+
+                        $('#' + tag + '-labs').append(`<p>${labNumber}. ${labs[i - 1]} (<a href="textbook/${tag}/${tag}lab${labNumber}ukr.pdf" target="_blank">UKR</a> | <a href="textbook/${tag}/${tag}lab${labNumber}eng.pdf" target="_blank">ENG</a>) ${labNumber <= 4 ? manualTask : ''}</p>`);
 
                         labNumber++;
                     }
