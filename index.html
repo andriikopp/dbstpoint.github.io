@@ -205,6 +205,9 @@
 
                 <p>Use the guidelines (available by links next to each laboratory work) to prepare written reports (<a href="doc/reportukr.docx" target="_blank">UKR</a> | <a href="doc/reporteng.docx" target="_blank">ENG</a>) for the following laboratory
                     works given below. Send files of your reports to the Teacher to get credit points.</p>
+
+                <p><strong style="color: #dc3545;">Attention! Prepare the handwritten solution of <a href="textbook/db1tasks.pdf" target="_blank">DB1 tasks</a> instead of laboratory works and send photos if you do not have a computer.</strong></p>
+
                 <div id="db1-labs"></div>
 
                 <span id="db1-reading"></span>
@@ -301,6 +304,9 @@
 
                 <p>Use the guidelines (available by links next to each laboratory work) to prepare written reports (<a href="doc/reportukr.docx" target="_blank">UKR</a> | <a href="doc/reporteng.docx" target="_blank">ENG</a>) for the following laboratory
                     works given below. Send files of your reports to the Teacher to get credit points.</p>
+
+                <p><strong style="color: #dc3545;">Attention! Prepare the handwritten solution of <a href="textbook/db2tasks.pdf" target="_blank">DB2 tasks</a> instead of laboratory works and send photos if you do not have a computer.</strong></p>
+
                 <div id="db2-labs"></div>
 
                 <span id="db2-course-project"></span>
@@ -316,8 +322,12 @@
                     by the end of semester. Await for the course project defense appointment.
                 </p>
                 <ul>
-                    <li>Select the topic of your course project from the list (<a href="doc/db2topicsukr.pdf" target="_blank">UKR</a> | <a href="doc/db2topicseng.pdf" target="_blank">ENG</a>) and inform the Teacher. <small style="color: #dc3545; font-weight: bold;">Attention! You can make the project based on your laboratory works, but the maximum score will not be greater than 75.</small></li>
-                    <li>Complete the steps given in the course project template (📥 download <a href="doc/db2projukr.docx" target="_blank">UKR</a> | <a href="doc/db2projeng.docx" target="_blank">ENG</a>) including at least the paragraph 2.1. <small style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten project (including at least the paragraph 2.1) and send photos if you do not have a computer.</small></li>
+                    <li>Select the topic of your course project from the list (<a href="doc/db2topicsukr.pdf" target="_blank">UKR</a> | <a href="doc/db2topicseng.pdf" target="_blank">ENG</a>) and inform the Teacher.
+                        <br><strong style="color: #dc3545;">Attention! You can make the project based on your laboratory works, but the maximum score will not be greater than 75.</strong></li>
+
+                    <li>Complete the steps given in the course project template (📥 download <a href="doc/db2projukr.docx" target="_blank">UKR</a> | <a href="doc/db2projeng.docx" target="_blank">ENG</a>) including at least the paragraph 2.1.
+                        <br><strong style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten project (including at least the paragraph 2.1) and send photos if you do not have a computer.</strong></li>
+
                     <li><small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Use the guidelines (given below next to each item) to develop the database application as part of your course project:
                         <ul>
                             <li>Full-stack development using MySQL (or MS SQL Server, PostgreSQL, SQLite, MongoDB, etc.), PHP (or Java, Python, .NET, NodeJS, etc.), and HTML/CSS/JavaScript:</li>
@@ -635,9 +645,7 @@
                     if (labs[i - 1].includes('lab_track')) {
                         $('#' + tag + '-labs').append(`<p>${labs[i - 1]}</p>`);
                     } else {
-                        let manualTask = `<small style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten solution of the <a href="textbook/${tag}tasks.pdf" target="_blank">${tag.toUpperCase()} Task No. ${labNumber}</a> and send photos if you do not have a computer.</small>`;
-
-                        $('#' + tag + '-labs').append(`<p>🧪 <b>${tag.toUpperCase()} Lab #${labNumber}.</b> ${labs[i - 1]} (<a href="textbook/${tag}/${tag}lab${labNumber}ukr.pdf" target="_blank">UKR</a> | <a href="textbook/${tag}/${tag}lab${labNumber}eng.pdf" target="_blank">ENG</a>) ${labNumber <= 4 ? manualTask : ''}</p>`);
+                        $('#' + tag + '-labs').append(`<p>🧪 <b>${tag.toUpperCase()} Lab #${labNumber}.</b> ${labs[i - 1]} (<a href="textbook/${tag}/${tag}lab${labNumber}ukr.pdf" target="_blank">UKR</a> | <a href="textbook/${tag}/${tag}lab${labNumber}eng.pdf" target="_blank">ENG</a>)</p>`);
 
                         labNumber++;
                     }
@@ -658,19 +666,17 @@
                                 <img src="img/${tag}/${i}.PNG" class="card-img-top" alt="${tag}-${i}">
                             </a>
                             <div class="card-body">
-                                <h5 class="card-title">❗️ ${tag.toUpperCase()} Lesson #${i}</h5>
+                                <h5 class="card-title">🔹 ${tag.toUpperCase()} Lesson #${i}</h5>
                                 
                                 <p class="card-text"><a href="textbook/${tag}/slides/${tag}slides${i}.pdf" target="_blank">📊 ${tag.toUpperCase()} Lesson #${i} Slides (UKR & ENG)</a></p>
                                 
                                 <p class="card-text"><a href="${ytUA[i - 1]}" target="_blank">🎥 ${tag.toUpperCase()} Lesson #${i} Video (UKR)</a></p>
                                 <p class="card-text"><a href="${ytEN[i - 1]}" target="_blank">🎥 ${tag.toUpperCase()} Lesson #${i} Video (ENG)</a></p>
 
-                                <p class="card-text">1. Use the <a href="textbook/${tag}.pdf" target="_blank">${tag.toUpperCase()} textbook</a> to prepare written answers to the following questions given below.</p>
+                                <p class="card-text">Use the <a href="textbook/${tag}.pdf" target="_blank">${tag.toUpperCase()} textbook</a> to read about the following topics given below.</p>
 
-                                <h6>❓ Questions for the ${tag.toUpperCase()} Lesson #${i}</h6>
+                                <h6>💡 Topics of the ${tag.toUpperCase()} Lesson #${i}</h6>
                                 ${topicsList}
-
-                                <p class="card-text">2. Send a file with your answers to the Teacher to get credit points. <small style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten answer to these questions and send photos if you do not have a computer.</small></p>
                             </div>
                         </div>`);
                 }
