@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="img/logo.png" />
+
+    <title>Learning Materials for Students by Andrii Kopp</title>
+    <meta name="title" content="Learning Materials for Students by Andrii Kopp">
+    <meta name="description" content="Learning materials by Associate Professor Andrii Kopp, Ph.D. for students of National Technical University Kharkiv Polytechnic Institute.">
+
+    <meta property="og:title" content="Learning Materials for Students by Andrii Kopp">
+    <meta property="og:description" content="Learning materials by Associate Professor Andrii Kopp, Ph.D. for students of National Technical University Kharkiv Polytechnic Institute.">
+
+    <meta property="twitter:title" content="Learning Materials for Students by Andrii Kopp">
+    <meta property="twitter:description" content="Learning materials by Associate Professor Andrii Kopp, Ph.D. for students of National Technical University Kharkiv Polytechnic Institute.">
+
+    <style>
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: #f8f9fa;
+            /* Set a background color */
+            color: #212529;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+        
+        #myBtn:hover {
+            background-color: #ebecec;
+            /* Add a dark-grey background on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">
+            🗃️ Materials for Students
+        </span>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <div id="google_translate_element"></div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({
+                                pageLanguage: 'en'
+                            }, 'google_translate_element');
+                        }
+                    </script>
+                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#db1">DB1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#db2">DB2</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="mt-2" id="flags">
+            <a href="https://dbstpoint.github.io/" target="_blank" class="mr-1"><img src="img/flag-uk.png" width="32" alt="flag-uk"></a>
+
+            <a href="https://dbstpoint-github-io.translate.goog/?_x_tr_sl=en&_x_tr_tl=uk" target="_blank" class="mr-1"><img src="img/flag-ua.png" width="32" alt="flag-ua"></a>
+        </div>
+
+        <h2 class="mt-2">💻 Learning materials by Associate Professor Andrii Kopp, Ph.D. for students of National Technical University "Kharkiv Polytechnic Institute"</h2>
+
+        <p>
+            🧑‍🎓 This website is for students who are studying in the <u>Institute of Computer Science and Information Technology</u> of <b>National Technical University "Kharkiv Polytechnic Institute"</b> with the Associate Professor Andrii Kopp, Ph.D.<br>
+            <small>
+                <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND</a> <script>document.write(new Date().getFullYear());</script> Use only for educational and research purposes
+            </small>
+        </p>
+
+        <p>👨‍🏫 My webpage: <a href="https://andriikopp.github.io/" target="_blank">andriikopp.github.io</a></p>
+
+        <p>💬 Databases Channel & Chat: <a href="https://t.me/db_kopp_khpi">Telegram</a></p>
+
+        <p>🖥️ My courses:</p>
+        <ul>
+            <li>📌 <b>DB1</b> - <a href="#db1">Data Models and Structures / Databases (Part 1)</a> for 2nd year students in 3rd semester</li>
+            <li>📌 <b>DB2</b> - <a href="#db2">Design and Development of Databases / Databases (Part 2)</a> for 2nd year students in 4th semester</li>
+        </ul>
+
+        <p>⚙️ Useful things:</p>
+        <ul>
+            <li>🌐 Online Diagramming Software: <a href="https://app.diagrams.net/" target="_blank">app.diagrams.net</a></li>
+            <li>🌐 Online SQL Environment: <a href="https://www.db-fiddle.com/" target="_blank">db-fiddle.com</a></li>
+
+            <li>📥 Free Diagramming Tool: <a href="https://staruml.io/" target="_blank">StarUML</a></li>
+
+            <li>📥 Microsoft SQL Server: <a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads" target="_blank">Download</a></li>
+
+            <li>📥 XAMPP is an easy to install Apache distribution containing MariaDB/MySQL, PHP, and Perl: <a href="https://www.apachefriends.org/download.html" target="_blank">Download</a></li>
+
+            <li>📥 PostgreSQL: <a href="https://www.postgresql.org/download/" target="_blank">Download</a></li>
+            <li>📥 pgAdmin: <a href="https://www.pgadmin.org/download/" target="_blank">Download</a></li>
+
+            <li>📥 MongoDB: <a href="https://www.mongodb.com/" target="_blank">Download</a></li>
+
+            <li>📥 Oracle APEX: <a href="https://apex.oracle.com/en/" target="_blank">Download</a></li>
+
+            <li>📥 Visual Studio Code: <a href="https://code.visualstudio.com/" target="_blank">Download</a></li>
+        </ul>
+    </div>
+
+    <div class="ml-4 mr-4">
+        <div class="row">
+            <div class="col-sm-12">
+                <span id="db1"></span>
+                <br>
+                <br>
+                <br>
+                <h3>📌 <b>DB1</b> - Data Models and Structures / Databases (Part 1)</h3>
+                <p>DB1 Quick Reference 👉 <a href="pages/db1quick.html" target="_blank">Link</a></p>
+
+                <ul>
+                    <li><a href="textbook/db1intro.pdf" target="_blank">DB1 Introduction</a></li>
+                    <li><a href="#db1-evaluation">DB1 Evaluation</a></li>
+                    <li><a href="#db1-lectures">DB1 Classes</a></li>
+                    <li><a href="#db1-lab-workshop">DB1 Laboratory Workshop</a></li>
+                    <li><a href="#db1-reading">DB1 Reading</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <span id="db1-evaluation"></span>
+                <br>
+                <br>
+                <br>
+                <h4>🧮 DB1 Evaluation</h4>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Activity</th>
+                                <th scope="col">Credit Points (per unit)</th>
+                                <th scope="col">Credit Points (total)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Classes</th>
+                                <td>2</td>
+                                <td>2 &times; 16 = 32</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Laboratory Workshop</th>
+                                <td>7</td>
+                                <td>7 &times; 4 = 28<br><small style="color: #28a745; font-weight: bold;">+ optional*</small></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="2">Exam (DB1 Questions 👉 <a href="doc/db1questions.pdf" target="_blank">UKR & ENG</a>)</th>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="2">Total</th>
+                                <td>100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <span id="db1-lab-workshop"></span>
+                <br>
+                <br>
+                <br>
+                <h4>👩‍💻 DB1 Laboratory Workshop</h4>
+                <div class="mb-2 text-center">
+                    <img src="img/db1labs.png" alt="db1labs" class="img-fluid">
+                </div>
+
+                <p>Use the guidelines (available by links next to each laboratory work) to prepare written reports (<a href="doc/reportukr.docx" target="_blank">UKR</a> | <a href="doc/reporteng.docx" target="_blank">ENG</a>) for the following laboratory
+                    works given below. Send files of your reports to the Teacher to get credit points.</p>
+
+                <p><strong style="color: #dc3545;">Attention! Prepare the handwritten solution of <a href="textbook/db1tasks.pdf" target="_blank">DB1 tasks</a> instead of laboratory works and send photos if you do not have a computer.</strong></p>
+
+                <div id="db1-labs"></div>
+
+                <span id="db1-reading"></span>
+                <br>
+                <br>
+                <br>
+                <h4>DB1 Reading</h4>
+                <p>📚 References <a href="textbook/db1reading.pdf" target="_blank">UKR & ENG</a></p>
+            </div>
+
+            <div class="col-sm-8">
+                <span id="db1-lectures"></span>
+                <br>
+                <br>
+                <br>
+                <h4>👨‍🏫 DB1 Classes</h4>
+                <div class="row row-cols-1 row-cols-md-2" id="db1-cards"></div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <span id="db2"></span>
+                <br>
+                <br>
+                <br>
+                <h3>📌 <b>DB2</b> - Design and Development of Databases / Databases (Part 2)</h3>
+                <p>DB2 Quick Reference 👉 <a href="pages/db2quick.html" target="_blank">Link</a></p>
+
+                <ul>
+                    <li><a href="textbook/db2intro.pdf" target="_blank">DB2 Introduction</a></li>
+                    <li><a href="#db2-evaluation">DB2 Evaluation</a></li>
+                    <li><a href="#db2-lectures">DB2 Classes</a></li>
+                    <li><a href="#db2-lab-workshop">DB2 Laboratory Workshop</a></li>
+                    <li><a href="#db2-course-project">DB2 Course Project</a></li>
+                    <li><a href="#db2-reading">DB2 Reading</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <span id="db2-evaluation"></span>
+                <br>
+                <br>
+                <br>
+                <h4>🧮 DB2 Evaluation</h4>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Activity</th>
+                                <th scope="col">Credit Points (per unit)</th>
+                                <th scope="col">Credit Points (total)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Classes</th>
+                                <td>2</td>
+                                <td>2 &times; 16 &times; 0.5 = 16</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Laboratory Workshop</th>
+                                <td>6</td>
+                                <td>6 &times; 4 &times; 0.5 = 12<br><small style="color: #28a745; font-weight: bold;">+ optional*</small></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Course Project <small style="color: #dc3545; font-weight: bold;">(*mandatory)</small></th>
+                                <td>100</td>
+                                <td>100 &times; 0.32 = 32</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="2">Exam (DB2 Questions 👉 <a href="doc/db2questions.pdf" target="_blank">UKR & ENG</a>)</th>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="2">Total</th>
+                                <td>100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <span id="db2-lab-workshop"></span>
+                <br>
+                <br>
+                <br>
+                <h4>👩‍💻 DB2 Laboratory Workshop</h4>
+                <div class="mb-2 text-center">
+                    <img src="img/db2labs.png" alt="db2labs" class="img-fluid">
+                </div>
+
+                <p>Use the guidelines (available by links next to each laboratory work) to prepare written reports (<a href="doc/reportukr.docx" target="_blank">UKR</a> | <a href="doc/reporteng.docx" target="_blank">ENG</a>) for the following laboratory
+                    works given below. Send files of your reports to the Teacher to get credit points.</p>
+
+                <p><strong style="color: #dc3545;">Attention! Prepare the handwritten solution of <a href="textbook/db2tasks.pdf" target="_blank">DB2 tasks</a> instead of laboratory works and send photos if you do not have a computer.</strong></p>
+
+                <div id="db2-labs"></div>
+
+                <span id="db2-course-project"></span>
+                <br>
+                <br>
+                <br>
+                <h4>💻 DB2 Course Project</h4>
+                <div class="mb-2 text-center">
+                    <img src="img/db2project.png" alt="db2project" class="img-fluid">
+                </div>
+
+                <p>Use the guidelines (available by links next to each item) to prepare a written report for the course project. Send the course project report and the presentation (created using Microsoft PowrPoint or other presentations tool) to the Teacher
+                    by the end of semester. Await for the course project defense appointment.
+                </p>
+                <ul>
+                    <li>Select the topic of your course project from the list (<a href="doc/db2topicsukr.pdf" target="_blank">UKR</a> | <a href="doc/db2topicseng.pdf" target="_blank">ENG</a>) and inform the Teacher.
+                        <br><strong style="color: #dc3545;">Attention! You can make the project based on your laboratory works, but the maximum score will not be greater than 75.</strong></li>
+
+                    <li>Complete the steps given in the course project template (📥 download <a href="doc/db2projukr.docx" target="_blank">UKR</a> | <a href="doc/db2projeng.docx" target="_blank">ENG</a>) including at least the paragraph 2.1.
+                        <br><strong style="color: #dc3545; font-weight: bold;">Attention! Prepare the handwritten project (including at least the paragraph 2.1) and send photos if you do not have a computer.</strong></li>
+
+                    <li><small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Use the guidelines (given below next to each item) to develop the database application as part of your course project:
+                        <ul>
+                            <li>Full-stack development using MySQL (or MS SQL Server, PostgreSQL, SQLite, MongoDB, etc.), PHP (or Java, Python, .NET, NodeJS, etc.), and HTML/CSS/JavaScript:</li>
+                            <ul>
+                                <li>Development of an elementary PHP database web application (<a href="textbook/db2phpukr.pdf" target="_blank">UKR</a> | <a href="textbook/db2phpeng.pdf" target="_blank">ENG</a>)</li>
+                                <li>🔥 The example of an elementary PHP database web application (<a href="resources/phpdbexample.zip">📥 download</a>)</li>
+                                <li>🔥 Case-study: Simple online shop/mart (PHP & MySQL step-by-step video guide) - Part 1 <a href="https://drive.google.com/file/d/1QiMEb7NSoWaT0oZx0WS6sQ0bKZ7l3jOP/view?usp=sharing" target="_blank">UKR</a> | <a href="https://drive.google.com/file/d/12WiBU9AoCelfmficxMQtEAJtu3RTo6DR/view?usp=sharing"
+                                        target="_blank">ENG</a></li>
+                                <li>🔥 Case-study: Simple online shop/mart (PHP & MySQL step-by-step video guide) - Part 2 <a href="https://drive.google.com/file/d/1EaNruL7VGzyDaFDWUR3PByvFuEHtpQ68/view?usp=sharing" target="_blank">UKR</a> | <a href="https://drive.google.com/file/d/1eqk8m2EkQcNg030HDfblRmM5ID76d319/view?usp=sharing"
+                                        target="_blank">ENG</a></li>
+
+                                <li>⭐ Software version control using Git (<a href="textbook/gitukr.pdf" target="_blank">UKR</a> | <a href="textbook/giteng.pdf" target="_blank">ENG</a>)</li>
+                                <li>⭐ Advanced web application development using MySQL, PHP, HTML, CSS and JavaScript (<a href="textbook/db2php2ukr.pdf" target="_blank">UKR</a> | <a href="textbook/db2php2eng.pdf" target="_blank">ENG</a>)</li>
+                            </ul>
+                            <li>No-code (Low-code) development using the Oracle APEX platform:</li>
+                            <ul>
+                                <li>Development of an elementary Oracle APEX database web application (<a href="textbook/db2apexukr.pdf" target="_blank">UKR</a> | <a href="textbook/db2apexeng.pdf" target="_blank">ENG</a>)</li>
+                                <li>🔥 Case-study: Grocery store database and application (Oracle APEX step-by-step video guide) <a href="https://drive.google.com/file/d/1lVHDPjT-av_U6BRHaL2iavrOSXrfNTBV/view?usp=sharing" target="_blank">UKR</a> | <a href="https://drive.google.com/file/d/1o7dVEwmv9l4st2XTx0KnKngd4Lv2WoDS/view?usp=sharing"
+                                        target="_blank">ENG</a></li>
+                            </ul>
+                        </ul>
+                    </li>
+                </ul>
+
+                <span id="db2-reading"></span>
+                <br>
+                <br>
+                <br>
+                <h4>DB2 Reading</h4>
+                <p>📚 References <a href="textbook/db2reading.pdf" target="_blank">UKR & ENG</a></p>
+            </div>
+
+            <div class="col-sm-8">
+                <span id="db2-lectures"></span>
+                <br>
+                <br>
+                <br>
+                <h4>👨‍🏫 DB2 Classes</h4>
+                <div class="row row-cols-1 row-cols-md-2" id="db2-cards"></div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Menu</button>
+
+    <div class="jumbotron jumbotron-fluid mb-0">
+        <div class="container">
+            <p class="lead">&copy;
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> Andrii Kopp 🌐 <a href="https://andriikopp.github.io/" target="_blank">andriikopp.github.io</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            const DB1_YT_UA = ['https://youtu.be/Lfq0SD7xRfg', 'https://youtu.be/i07UKWBEFKA', 'https://youtu.be/HGxsKQrMBJ4', 'https://youtu.be/BCyoCoLuYlI', 'https://youtu.be/l_xQLu-Qzi4', 'https://youtu.be/rfQH4ExKsAw', 'https://youtu.be/TpQTlWdMqCM', 'https://youtu.be/ySuJe4M2GfY', 'https://youtu.be/yBhd70b8Qg0', 'https://youtu.be/RtQ_romS1S0', 'https://youtu.be/sgGdFmtiLxk', 'https://youtu.be/p825OlVXodo', 'https://youtu.be/wVDuc4UPnYU', 'https://youtu.be/73rxww1W_KA', 'https://youtu.be/LKULMhyOaZQ', 'https://youtu.be/lQRH6ocBbCo'];
+
+            const DB1_YT_EN = ['https://youtu.be/Lfq0SD7xRfg?t=272', 'https://youtu.be/i07UKWBEFKA?t=287', 'https://youtu.be/HGxsKQrMBJ4?t=207', 'https://youtu.be/BCyoCoLuYlI?t=325', 'https://youtu.be/l_xQLu-Qzi4?t=226', 'https://youtu.be/rfQH4ExKsAw?t=237', 'https://youtu.be/TpQTlWdMqCM?t=258', 'https://youtu.be/ySuJe4M2GfY?t=264', 'https://youtu.be/yBhd70b8Qg0?t=410', 'https://youtu.be/RtQ_romS1S0?t=210', 'https://youtu.be/sgGdFmtiLxk?t=293', 'https://youtu.be/p825OlVXodo?t=162', 'https://youtu.be/wVDuc4UPnYU?t=134', 'https://youtu.be/73rxww1W_KA?t=155', 'https://youtu.be/LKULMhyOaZQ?t=150', 'https://youtu.be/lQRH6ocBbCo?t=129'];
+
+            const DB2_YT_UA = ['https://youtu.be/FnSb5Mle0ss', 'https://youtu.be/49dQGva5W5M', 'https://youtu.be/WZo5uTcdZDw', 'https://youtu.be/rpFZhPxEcVE', 'https://youtu.be/-crDnmk4dig', 'https://youtu.be/uWRSAjBTFIs', 'https://youtu.be/ysMSuYyFhG8', 'https://youtu.be/HJ5Vr8qoP7Y', 'https://youtu.be/XdoOSpL87Ms', 'https://youtu.be/_FcU6LjE4oQ', 'https://youtu.be/ccz8prk663k', 'https://youtu.be/z6RLiTUadoI', 'https://youtu.be/ADhQiszdk2U', 'https://youtu.be/N6Nx220wzNE', 'https://youtu.be/RpOdONQ1-wE', 'https://youtu.be/sY229GtPm8w'];
+
+            const DB2_YT_EN = ['https://youtu.be/FnSb5Mle0ss?t=221', 'https://youtu.be/49dQGva5W5M?t=228', 'https://youtu.be/WZo5uTcdZDw?t=357', 'https://youtu.be/rpFZhPxEcVE?t=334', 'https://youtu.be/-crDnmk4dig?t=264', 'https://youtu.be/uWRSAjBTFIs?t=224', 'https://youtu.be/ysMSuYyFhG8?t=276', 'https://youtu.be/HJ5Vr8qoP7Y?t=305', 'https://youtu.be/XdoOSpL87Ms?t=365', 'https://youtu.be/_FcU6LjE4oQ?t=168', 'https://youtu.be/ccz8prk663k?t=99', 'https://youtu.be/z6RLiTUadoI?t=266', 'https://youtu.be/ADhQiszdk2U?t=161', 'https://youtu.be/N6Nx220wzNE?t=315', 'https://youtu.be/RpOdONQ1-wE?t=407', 'https://youtu.be/sY229GtPm8w?t=236'];
+
+            const DB1_TOPICS = [
+                ['Lesson 1',
+                    'Main requirements to DBMS.',
+                    'Main components of ANSI/SPARC model.',
+                ],
+                ['Lesson 2',
+                    'Main features of query languages in modern DBMS.',
+                    'Data independence.',
+                ],
+                ['Lesson 3',
+                    'Advantages of data independence.',
+                    'Integrity constraints and data consistency in DBMS.',
+                ],
+                ['Lesson 4',
+                    'Security and access control in modern DBMS.',
+                    'Main performance metrics.',
+                ],
+                ['Lesson 5',
+                    'Client-server architecture.',
+                    'Object-relational mismatch.',
+                ],
+                ['Lesson 6',
+                    'Main differences between OLTP and OLAP systems.',
+                    'Evaluation criteria of parallel systems.',
+                ],
+                ['Lesson 7',
+                    'Characteristics of NoSQL systems.',
+                    'DBMS selection factors for information systems development.',
+                ],
+                ['Lesson 8',
+                    'Data models and their main features.',
+                    'Basic concepts of relational data model.',
+                ],
+                ['Lesson 9',
+                    'Relational algebra.',
+                    'Relational calculus.',
+                ],
+                ['Lesson 10',
+                    'Functional dependencies and keys.',
+                    'Normalization and normal forms.',
+                    'Practical aspects of application of relational data model.',
+                ],
+                ['Lesson 11',
+                    'The entity-relationship model.',
+                    'Object and other data models.',
+                    'Designing a database schema in an entity-relationship model.',
+                ],
+                ['Lesson 12',
+                    'SELECT, SELECT DISTINCT, SELECT TOP queries.',
+                    'WHERE statement and logical operators AND, OR, NOT.',
+                    'ORDER BY statement.',
+                ],
+                ['Lesson 13',
+                    'INSERT INTO query.',
+                    'UPDATE query.',
+                    'DELETE query.',
+                ],
+                ['Lesson 14',
+                    'Aggregation functions MIN, MAX, COUNT, AVG, SUM.',
+                    'Operators LIKE, IN, BETWEEN, AS.',
+                ],
+                ['Lesson 15',
+                    'JOIN and UNION statements.',
+                    'GROUP BY and HAVING statements.',
+                ],
+                ['Lesson 16',
+                    'Operators EXISTS, ANY, ALL.',
+                    'CASE operator.',
+                    'NULL values and functions to work with them.'
+                ]
+            ];
+
+            const DB2_TOPICS = [
+                ['Lesson 1',
+                    'File-Server',
+                    'Traditional Two-Tier Client-Server',
+                    'Three-Tier Client-Server',
+                    'n-Tier Client-Server',
+                    'Middleware',
+                ],
+                ['Lesson 2',
+                    'Transaction Processing Monitors',
+                    'Web Services and Service-Oriented Architectures',
+                    'Service-Oriented Architectures (SOA)',
+                    'Distributed DBMSs',
+                    'Data Warehousing',
+                ],
+                ['Lesson 3',
+                    'Cloud Computing',
+                    'Cloud-based database solutions',
+                    'Components of a DBMS',
+                    'Components of Database Manager (DM)',
+                ],
+                ['Lesson 4',
+                    'Data Flow Diagrams (DFD). Types and elements.',
+                    'Data Flow Diagrams (DFD). Design rules.',
+                    'Business rules. Types.',
+                    'Business rules. Best practices.',
+                    'Translating Business Rules into Data Model Components.',
+                ],
+                ['Lesson 5',
+                    'Standard Database Concepts.',
+                    'Entity Relationship Model. Attributes.',
+                    'Entity Relationship Model. Relationships.',
+                    'Entity Relationship Model. Associative Entities.',
+                    'Developing an ER Diagram.',
+                ],
+                ['Lesson 6',
+                    'SQL CREATE DATABASE statement',
+                    'SQL DROP DATABASE statement',
+                    'SQL CREATE TABLE statement',
+                    'SQL DROP TABLE statement',
+                    'SQL ALTER TABLE statement',
+                    '🔥 Video guide (<a href="https://drive.google.com/file/d/1dnY-k4D8ON6YL13VIjm48mP-BrONm4x3/view?usp=sharing" target="_blank">UKR</a> | <a href="https://drive.google.com/file/d/1C1F83vj0JIhO8MgxQlrS9OmiMrFXDJFT/view?usp=sharing" target="_blank">ENG</a>)'
+                ],
+                ['Lesson 7',
+                    'SQL NOT NULL statement',
+                    'SQL UNIQUE statement',
+                    'SQL PRIMARY KEY statement',
+                    'SQL FOREIGN KEY statement',
+                    'SQL CHECK statement',
+                    'SQL DEFAULT statement',
+                    'SQL INDEX statement',
+                    'SQL AUTO INCREMENT statement',
+                    '🔥 Video guide (<a href="https://drive.google.com/file/d/1dnY-k4D8ON6YL13VIjm48mP-BrONm4x3/view?usp=sharing" target="_blank">UKR</a> | <a href="https://drive.google.com/file/d/1C1F83vj0JIhO8MgxQlrS9OmiMrFXDJFT/view?usp=sharing" target="_blank">ENG</a>)'
+                ],
+                ['Lesson 8',
+                    'CREATE VIEW statement',
+                    'DROP VIEW statement',
+                    'RENAME TABLE statement',
+                    'SHOW CREATE VIEW statement',
+                    '🔥 Video guide (<a href="https://drive.google.com/file/d/1dnY-k4D8ON6YL13VIjm48mP-BrONm4x3/view?usp=sharing" target="_blank">UKR</a> | <a href="https://drive.google.com/file/d/1C1F83vj0JIhO8MgxQlrS9OmiMrFXDJFT/view?usp=sharing" target="_blank">ENG</a>)'
+                ],
+                ['Lesson 9',
+                    'CREATE FUNCTION statement',
+                    'DELIMITER statement',
+                    'DROP FUNCTION statement',
+                    'SHOW FUNCTION STATUS statement',
+                    '🔥 Video guide (<a href="https://drive.google.com/file/d/1dnY-k4D8ON6YL13VIjm48mP-BrONm4x3/view?usp=sharing" target="_blank">UKR</a> | <a href="https://drive.google.com/file/d/1C1F83vj0JIhO8MgxQlrS9OmiMrFXDJFT/view?usp=sharing" target="_blank">ENG</a>)'
+                ],
+                ['Lesson 10',
+                    'CREATE PROCEDURE statement',
+                    'CALL statement',
+                    'DROP PROCEDURE statement',
+                    'IN, OUT, INOUT statement',
+                    'DECLARE, SET statement',
+                    'SHOW PROCEDURE STATUS statement',
+                    '🔥 Video guide (<a href="https://drive.google.com/file/d/156-Z-GMTd6SSZ6fKxNmxq2B5ne9WEOKV/view?usp=sharing" target="_blank">UKR</a> | <a href="https://drive.google.com/file/d/1p1ZqDnlrDczcDUIk7gqySTtn2gtNcbl-/view?usp=sharing" target="_blank">ENG</a>)'
+                ],
+                ['Lesson 11',
+                    'CREATE TRIGGER statement',
+                    'OLD, NEW statement',
+                    'SHOW TRIGGERS statement',
+                    'DROP TRIGGER statement',
+                    '🔥 Video guide (<a href="https://drive.google.com/file/d/1lBTY_9_82rBHw4h89w4_C6uxFU75JosV/view?usp=sharing" target="_blank">UKR</a> | <a href="https://drive.google.com/file/d/16bIBTZ_MWI6TSBP-00MHHwNH2KJR8Mil/view?usp=sharing" target="_blank">ENG</a>)'
+                ],
+                ['Lesson 12',
+                    'CASCADE, SET NULL, NO ACTION, RESTRICT, SET DEFAULT.',
+                    'MySQL START TRANSACTION, COMMIT, ROLLBACK.',
+                    'ACID.',
+                    'Dirty Read. Non Repeatable Read. Phantom Read.',
+                    'Isolation levels.',
+                    'SAVEPOINT. ROLLBACK TO SAVEPOINT.',
+                    '🔥 Video guide (<a href="https://drive.google.com/file/d/1E4_PIQ5xS7Yz3eDStm3DnEeqLKurt7XN/view?usp=sharing" target="_blank">UKR</a> | <a href="https://drive.google.com/file/d/1AyUdW-h_GZ-jc1oJoZURSmlwla04TfpG/view?usp=sharing" target="_blank">ENG</a>)'
+                ],
+                ['Lesson 13',
+                    'MySQL CREATE USER.',
+                    'MySQL GRANT.',
+                    'MySQL REVOKE.',
+                    'MySQL SHOW GRANTS.',
+                    'MySQL DROP USER.',
+                    'Change user password.',
+                    'User information.',
+                    'MySQL RENAME USER.',
+                    'MySQL ACCOUNT LOCK. ACCOUNT UNLOCK.',
+                    '🔥 Video guide (<a href="https://drive.google.com/file/d/1Cg1MpgNAqJQkgtrLgXbiX8Zx_zqol9tp/view?usp=sharing" target="_blank">UKR</a> | <a href="https://drive.google.com/file/d/13avPI4CMzSp1TchU-K-PpfdFVNZk064B/view?usp=sharing" target="_blank">ENG</a>)'
+                ],
+                ['Lesson 14',
+                    'HTTP GET and POST methods',
+                    'PHP function mysqli_connect()',
+                    'PHP functions mysqli_select_db() and mysql_query()',
+                    'PHP function mysql_fetch_array()',
+                    'PHP Data Objects (PDO)',
+                ],
+                ['Lesson 15',
+                    'Basic JDBC API classes and interfaces',
+                    'Transaction management by means of JDBC',
+                    'PreparedStatement and CallableStatement objects',
+                    'Servlets in Java',
+                ],
+                ['Lesson 16',
+                    'Pymysql connect() and cursor() functions',
+                    'Pymysql execute() and fetchall() functions',
+                    'Transaction management using pymysql'
+                ]
+            ];
+
+            const DB1_LABS = [
+                '<strong class="lab_track">Data Modeling</strong> (<a href="textbook/dbdesignukr.pdf" target="_blank">UKR</a> | <a href="textbook/dbdesigneng.pdf" target="_blank">ENG</a>)',
+                'Development of Entity-Relationship and IDEF1X data models.',
+                'Creating a database based on the IDEF1X model.',
+
+                '<strong class="lab_track">Microsoft Access</strong>',
+                'Learning the basics of working with Microsoft Access DBMS.',
+                'Learning the basic commands for manipulating data using SQL language.',
+
+                '<strong class="lab_track">Microsoft SQL Server</strong>',
+                '<small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Getting started with Microsoft SQL Server. Basics of T-SQL. DDL.',
+                '<small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Getting started with Microsoft SQL Server. Basics of T-SQL. DML.',
+
+                '<strong class="lab_track">PostgreSQL</strong>',
+                '<small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Definition of data structure in PostgreSQL.',
+                '<small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Data operations in PostgreSQL.'
+            ];
+
+            const DB2_LABS = [
+                '<strong class="lab_track">MySQL</strong>',
+                'Creating a database using SQL language (on the example of MySQL).',
+                'Data manipulation with SQL language tools: adding, updating and deleting data (on the example of MySQL).',
+                'Data manipulation with SQL language tools: SELECT queries and their main features (on the example of MySQL).',
+                'Creating and using views (on the example of MySQL).',
+
+                '<strong class="lab_track">Advanced SQL</strong>',
+                '<small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Creating and using stored procedures and triggers (on the example of MySQL).',
+                '<small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Basics of using data integrity controls (on the example of MySQL).',
+                '<small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Working with transactions (on the example of MySQL).',
+                '<small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> User rights management (on the example of MySQL).',
+
+                '<strong class="lab_track">SQLite</strong>',
+                '<small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Introduction to SQLite.',
+                '<small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Defining a data structure in SQLite.',
+
+                '<strong class="lab_track">MongoDB</strong>',
+                '<small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Introduction to MongoDB.',
+                '<small style="color: #28a745; font-weight: bold;">(*optional: + EXTRA points)</small> Working with MongoDB.'
+            ];
+
+            const displayContent = function(tag, ytUA, ytEN, topics, labs) {
+                let labNumber = 1;
+
+                for (let i = 1; i <= labs.length; i++) {
+                    if (labs[i - 1].includes('lab_track')) {
+                        $('#' + tag + '-labs').append(`<p>${labs[i - 1]}</p>`);
+                    } else {
+                        $('#' + tag + '-labs').append(`<p>🧪 <b>${tag.toUpperCase()} Lab #${labNumber}.</b> ${labs[i - 1]} (<a href="textbook/${tag}/${tag}lab${labNumber}ukr.pdf" target="_blank">UKR</a> | <a href="textbook/${tag}/${tag}lab${labNumber}eng.pdf" target="_blank">ENG</a>)</p>`);
+
+                        labNumber++;
+                    }
+                }
+
+                for (let i = 1; i <= topics.length; i++) {
+                    let topicsList = '<ul>';
+
+                    for (let j = 1; j < topics[i - 1].length; j++) {
+                        topicsList += `<li>${topics[i - 1][j]}</li>`;
+                    }
+
+                    topicsList += '</ul>';
+
+                    $('#' + tag + '-cards').append(`<div class="col mb-4">
+                        <div class="card h-100">
+                            <a href="img/${tag}/${i}.PNG" target="_blank">
+                                <img src="img/${tag}/${i}.PNG" class="card-img-top" alt="${tag}-${i}">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">🔹 ${tag.toUpperCase()} Lesson #${i}</h5>
+                                
+                                <p class="card-text"><a href="textbook/${tag}/slides/${tag}slides${i}.pdf" target="_blank">📊 ${tag.toUpperCase()} Lesson #${i} Slides (UKR & ENG)</a></p>
+                                
+                                <p class="card-text"><a href="${ytUA[i - 1]}" target="_blank">🎥 ${tag.toUpperCase()} Lesson #${i} Video (UKR)</a></p>
+                                <p class="card-text"><a href="${ytEN[i - 1]}" target="_blank">🎥 ${tag.toUpperCase()} Lesson #${i} Video (ENG)</a></p>
+
+                                <p class="card-text">Use the <a href="textbook/${tag}.pdf" target="_blank">${tag.toUpperCase()} textbook</a> to read about the following topics given below.</p>
+
+                                <h6>💡 Topics of the ${tag.toUpperCase()} Lesson #${i}</h6>
+                                ${topicsList}
+                            </div>
+                        </div>`);
+                }
+            };
+
+            displayContent('db1', DB1_YT_UA, DB1_YT_EN, DB1_TOPICS, DB1_LABS);
+            displayContent('db2', DB2_YT_UA, DB2_YT_EN, DB2_TOPICS, DB2_LABS);
+        });
+
+        // Scroll up button
+        { // Get the button:
+            mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        }
+    </script>
+</body>
+
+</html>
