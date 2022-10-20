@@ -7,4 +7,12 @@
         <loc>https://dbstpoint.github.io/en.html</loc>
         <changefreq>monthly</changefreq>
     </url>
+    <url>
+        <loc>https://dbstpoint.github.io/pages/db1quick.html</loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://dbstpoint.github.io/pages/db2quick.html</loc>
+        <changefreq>monthly</changefreq>
+    </url>
 </urlset>
